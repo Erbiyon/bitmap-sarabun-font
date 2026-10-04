@@ -1,128 +1,99 @@
 /**
  * Thai Text Shaper for Bitmap Fonts & Game Engines
  * Automatically shapes Thai Unicode into Private Use Area (PUA) 0xF700 - 0xF71A
- * Handles:
- *  1. SARA AM (ำ) decomposition and tone elevation (e.g. น้ำใจ)
- *  2. Long-tail consonants (ป, ฝ, ฟ, ฬ) collision avoidance (e.g. ปี่, ปิ่, ปี้, ปุ๊, ฟื้น)
- *  3. Base removal for ญ and ฐ with lower vowels (e.g. ญุ, ฐู)
- *  4. Lowered lower vowels for ฎ and ฏ (e.g. ฎุ)
+ *
+ * Rules:
+ *  1. Base removal for ญ (U+0E0D) and ฐ (U+0E10, U+0E20) when followed by lower vowels (ุ U+0E38, ู U+0E39, ฺ U+0E3A) -> PUA 0xF70F, 0xF710
+ *  2. Tone marks with SARA AM (ำ U+0E33) -> mapped to upper-level PUA variants (0xF700 - 0xF704 / 0xF70A - 0xF70E)
+ *  3. Long-tail consonants (ป U+0E1B, ฝ U+0E1D, ฟ U+0E1F, ฬ U+0E2C, ผ U+0E1C):
+ *     - Upper vowels (ั, ิ, ี, ึ, ื, ็, ํ) -> Left-shifted PUA (0xF714 - 0xF71A)
+ *     - Tone marks (่, ้, ๊, ๋, ์) with upper vowel -> High left-shifted PUA (0xF70A - 0xF70E)
+ *     - Tone marks (่, ้, ๊, ๋, ์) without upper vowel (e.g. ป่, ป่า, ปุ๊, ฝ่) -> Left-shifted PUA (0xF705 - 0xF709)
+ *  4. Normal consonants + upper vowel + tone -> High PUA (0xF700 - 0xF704)
+ *  5. Lower vowels after ฎ, ฏ -> Lowered PUA (0xF711 - 0xF713)
  */
 
-function shapeThaiText(inputStr) {
-  if (!inputStr) return '';
+function shapeThaiText(str) {
+  if (!str) return '';
 
-  // Step 1: Normalize Sara Am (0x0E33)
-  // Decompose into Nikhahit (0x0E4D) + Tone + Sara Aa (0x0E32)
-  const toneRegex = /([\u0E48\u0E49\u0E4A\u0E4B\u0E4C])/g;
-  let normalized = inputStr
-    .replace(/([\u0E48\u0E49\u0E4A\u0E4B\u0E4C])\u0E33/g, '\u0E4D$1\u0E32')
-    .replace(/\u0E33([\u0E48\u0E49\u0E4A\u0E4B\u0E4C])/g, '\u0E4D$1\u0E32')
-    .replace(/\u0E33/g, '\u0E4D\u0E32');
+  let s = str;
 
-  const upperVowelShiftMap = {
-    0x0E31: 0xF714, // Mai Han-Akat (ั)
-    0x0E34: 0xF715, // Sara I (ิ)
-    0x0E35: 0xF716, // Sara Ii (ี)
-    0x0E36: 0xF717, // Sara Ue (ึ)
-    0x0E37: 0xF718, // Sara Uee (ื)
-    0x0E47: 0xF719, // Maitaikhu (็)
-    0x0E4D: 0xF71A  // Nikhahit (ํ)
+  // 1. Base removal for ญ (U+0E0D) and ฐ (U+0E10, U+0E20) before lower vowels (ุ U+0E38, ู U+0E39, ฺ U+0E3A)
+  s = s.replace(/[\u0E0D](?=[\u0E38\u0E39\u0E3A])/g, '\uF70F');
+  s = s.replace(/[\u0E10\u0E20](?=[\u0E38\u0E39\u0E3A])/g, '\uF710');
+
+  // Mappings
+  const highToneMap = {
+    '\u0E48': '\uF700', // Mai Ek High
+    '\u0E49': '\uF701', // Mai Tho High
+    '\u0E4A': '\uF702', // Mai Tri High
+    '\u0E4B': '\uF703', // Mai Chattawa High
+    '\u0E4C': '\uF704'  // Thanthakhat High
+  };
+  const highShiftedToneMap = {
+    '\u0E48': '\uF70A', // Mai Ek High Shifted
+    '\u0E49': '\uF70B', // Mai Tho High Shifted
+    '\u0E4A': '\uF70C', // Mai Tri High Shifted
+    '\u0E4B': '\uF70D', // Mai Chattawa High Shifted
+    '\u0E4C': '\uF70E'  // Thanthakhat High Shifted
+  };
+  const shiftedToneMap = {
+    '\u0E48': '\uF705', // Mai Ek Shifted
+    '\u0E49': '\uF706', // Mai Tho Shifted
+    '\u0E4A': '\uF707', // Mai Tri Shifted
+    '\u0E4B': '\uF708', // Mai Chattawa Shifted
+    '\u0E4C': '\uF709'  // Thanthakhat Shifted
+  };
+  const shiftedVowelMap = {
+    '\u0E31': '\uF714', // Mai Han-Akat Shifted
+    '\u0E34': '\uF715', // Sara I Shifted
+    '\u0E35': '\uF716', // Sara Ii Shifted
+    '\u0E36': '\uF717', // Sara Ue Shifted
+    '\u0E37': '\uF718', // Sara Uee Shifted
+    '\u0E47': '\uF719', // Maitaikhu Shifted
+    '\u0E4D': '\uF71A'  // Nikhahit Shifted
   };
 
-  const chars = Array.from(normalized);
-  const result = [];
-  const len = chars.length;
+  // 2. SARA AM (ำ) and Tone Marks
+  // Tall consonants with Sara Am and Tone (e.g. ปล้ำ, ป้ำ)
+  s = s.replace(/([\u0E1B\u0E1D\u0E1F\u0E2C\u0E1C])([\u0E48-\u0E4C])\u0E33/g, (m, c, t) => c + highShiftedToneMap[t] + '\u0E33');
+  s = s.replace(/([\u0E1B\u0E1D\u0E1F\u0E2C\u0E1C])\u0E33([\u0E48-\u0E4C])/g, (m, c, t) => c + highShiftedToneMap[t] + '\u0E33');
 
-  for (let i = 0; i < len; i++) {
-    const ch = chars[i].charCodeAt(0);
+  // Normal consonants with Sara Am and Tone (e.g. น้ำ, ค่ำ, ถ้ำ)
+  s = s.replace(/([\u0E48-\u0E4C])\u0E33/g, (m, t) => highToneMap[t] + '\u0E33');
+  s = s.replace(/\u0E33([\u0E48-\u0E4C])/g, (m, t) => highToneMap[t] + '\u0E33');
 
-    // Lookahead: Next character
-    const next = i + 1 < len ? chars[i + 1].charCodeAt(0) : 0;
-    const hasLowerVowelNext = (next === 0x0E38 || next === 0x0E39 || next === 0x0E3A);
+  // 3. Long-tail consonants (ป U+0E1B, ฝ U+0E1D, ฟ U+0E1F, ฬ U+0E2C, ผ U+0E1C)
+  // Case 3A: Tall + Upper Vowel + Tone (e.g. ปี่, ปิ่, ปี้, ฟื้น)
+  s = s.replace(/([\u0E1B\u0E1D\u0E1F\u0E2C\u0E1C])([\u0E31\u0E34-\u0E37\u0E47\u0E4D])([\u0E48-\u0E4C])/g,
+    (m, c, v, t) => c + shiftedVowelMap[v] + highShiftedToneMap[t]);
+  s = s.replace(/([\u0E1B\u0E1D\u0E1F\u0E2C\u0E1C])([\u0E48-\u0E4C])([\u0E31\u0E34-\u0E37\u0E47\u0E4D])/g,
+    (m, c, t, v) => c + shiftedVowelMap[v] + highShiftedToneMap[t]);
 
-    // 1. Base removal for ญ (0x0E0D) and ฐ (0x0E10) before lower vowels
-    if (ch === 0x0E0D && hasLowerVowelNext) {
-      result.push(String.fromCharCode(0xF70F));
-      continue;
-    }
-    if (ch === 0x0E10 && hasLowerVowelNext) {
-      result.push(String.fromCharCode(0xF710));
-      continue;
-    }
+  // Case 3B: Tall + Upper Vowel alone (e.g. ปี, ปิ, ฟิ, ฝี, ป็)
+  s = s.replace(/([\u0E1B\u0E1D\u0E1F\u0E2C\u0E1C])([\u0E31\u0E34-\u0E37\u0E47\u0E4D])/g,
+    (m, c, v) => c + shiftedVowelMap[v]);
 
-    // Lookbehind: Immediate previous character
-    const immediatePrev = i > 0 ? chars[i - 1].charCodeAt(0) : 0;
-    const hasUpperVowelPrev = (
-      immediatePrev === 0x0E31 ||
-      (immediatePrev >= 0x0E34 && immediatePrev <= 0x0E37) ||
-      immediatePrev === 0x0E47 ||
-      immediatePrev === 0x0E4D ||
-      (immediatePrev >= 0xF714 && immediatePrev <= 0xF71A)
-    );
+  // Case 3C: Tall + Lower Vowel + Tone (e.g. ปุ๊, ปู่, ฟุ้ง)
+  s = s.replace(/([\u0E1B\u0E1D\u0E1F\u0E2C\u0E1C])([\u0E38\u0E39\u0E3A])([\u0E48-\u0E4C])/g,
+    (m, c, v, t) => c + v + shiftedToneMap[t]);
 
-    // Find base consonant by scanning backwards past marks
-    let baseConsonant = 0;
-    for (let k = i - 1; k >= 0; k--) {
-      const prevCode = chars[k].charCodeAt(0);
-      if ((prevCode >= 0x0E01 && prevCode <= 0x0E2E) || prevCode === 0xF70F || prevCode === 0xF710) {
-        baseConsonant = prevCode;
-        break;
-      }
-      if (prevCode < 0x0E01 || prevCode > 0x0E5B) {
-        break;
-      }
-    }
+  // Case 3D: Tall + Tone mark alone (e.g. ป่, ป่า, ป้า, ป๊, ฝ่)
+  s = s.replace(/([\u0E1B\u0E1D\u0E1F\u0E2C\u0E1C])([\u0E48-\u0E4C])/g,
+    (m, c, t) => c + shiftedToneMap[t]);
 
-    const isTallBase = (
-      baseConsonant === 0x0E1B || // ป
-      baseConsonant === 0x0E1D || // ฝ
-      baseConsonant === 0x0E1F || // ฟ
-      baseConsonant === 0x0E2C    // ฬ
-    );
-    const isDescenderBase = (baseConsonant === 0x0E0E || baseConsonant === 0x0E0F); // ฎ, ฏ
+  // 4. Normal consonant + Upper Vowel + Tone (e.g. ที่, ขึ้น, นั่ง)
+  s = s.replace(/([\u0E31\u0E34-\u0E37\u0E47\u0E4D])([\u0E48-\u0E4C])/g,
+    (m, v, t) => v + highToneMap[t]);
+  s = s.replace(/([\u0E48-\u0E4C])([\u0E31\u0E34-\u0E37\u0E47\u0E4D])/g,
+    (m, t, v) => v + highToneMap[t]);
 
-    // 2. Lower vowels after ฎ, ฏ
-    if (ch >= 0x0E38 && ch <= 0x0E3A && isDescenderBase) {
-      if (ch === 0x0E38) result.push(String.fromCharCode(0xF711));
-      else if (ch === 0x0E39) result.push(String.fromCharCode(0xF712));
-      else if (ch === 0x0E3A) result.push(String.fromCharCode(0xF713));
-      continue;
-    }
+  // 5. Lowered vowels for ฎ, ฏ
+  const lowerShortMap = { '\u0E38': '\uF711', '\u0E39': '\uF712', '\u0E3A': '\uF713' };
+  s = s.replace(/([\u0E0E\u0E0F])([\u0E38\u0E39\u0E3A])/g,
+    (m, c, v) => c + lowerShortMap[v]);
 
-    // 3. Tone marks and Thanthakhat: 0x0E48 - 0x0E4C (่ ้ ๊ ๋ ์)
-    if (ch >= 0x0E48 && ch <= 0x0E4C) {
-      const offset = ch - 0x0E48;
-      if (isTallBase && hasUpperVowelPrev) {
-        // High + Shifted Tone (e.g. ปี่, ปิ่, ปี้, ฟื้น)
-        result.push(String.fromCharCode(0xF70A + offset));
-      } else if (hasUpperVowelPrev) {
-        // High Tone (e.g. ที่, ขึ้น, น้ำ)
-        result.push(String.fromCharCode(0xF700 + offset));
-      } else if (isTallBase) {
-        // Shifted Tone (e.g. ป่า, ปุ๊, ฟุ้ง)
-        result.push(String.fromCharCode(0xF705 + offset));
-      } else {
-        // Normal Tone
-        result.push(chars[i]);
-      }
-      continue;
-    }
-
-    // 4. Upper vowels & symbols (ั ิ ี ึ ื ็ ํ) on tall consonants
-    if (upperVowelShiftMap[ch]) {
-      if (isTallBase) {
-        result.push(String.fromCharCode(upperVowelShiftMap[ch]));
-      } else {
-        result.push(chars[i]);
-      }
-      continue;
-    }
-
-    // 5. Default
-    result.push(chars[i]);
-  }
-
-  return result.join('');
+  return s;
 }
 
 if (typeof module !== 'undefined' && module.exports) {
