@@ -38,7 +38,13 @@ function Shape-Thai {
         [char]0x0E36 = [char]0xF717; [char]0x0E37 = [char]0xF718; [char]0x0E47 = [char]0xF719; [char]0x0E4D = [char]0xF71A
     }
 
-    # 2. Tone with Sara Am on Tall consonants (e.g. ปล้ำ, ป้ำ)
+    # 2. SARA AM (ำ U+0E33) and Tone Marks (่, ้, ๊, ๋, ์ U+0E48 - U+0E4C)
+    # Normalize decomposed Sara Am (ํ U+0E4D + า U+0E32) if present
+    $s = [System.Text.RegularExpressions.Regex]::Replace($s, "\u0E4D\u0E32", "$([char]0x0E33)")
+    $s = [System.Text.RegularExpressions.Regex]::Replace($s, "([\u0E48-\u0E4C])\u0E4D\u0E32", { param($m) $m.Groups[1].Value + [char]0x0E33 })
+    $s = [System.Text.RegularExpressions.Regex]::Replace($s, "\u0E4D([\u0E48-\u0E4C])\u0E32", { param($m) $m.Groups[1].Value + [char]0x0E33 })
+
+    # Tall consonants (ป, ฝ, ฟ, ฬ, ผ) -> High Shifted Tone (0xF70A - 0xF70E)
     $s = [System.Text.RegularExpressions.Regex]::Replace($s, "([\u0E1B\u0E1D\u0E1F\u0E2C\u0E1C])([\u0E48-\u0E4C])\u0E33", {
         param($m) $m.Groups[1].Value + $highShiftedToneMap[$m.Groups[2].Value[0]] + [char]0x0E33
     })
@@ -46,7 +52,15 @@ function Shape-Thai {
         param($m) $m.Groups[1].Value + $highShiftedToneMap[$m.Groups[2].Value[0]] + [char]0x0E33
     })
 
-    # Tone with Sara Am on Normal consonants (e.g. น้ำ, ค่ำ, ถ้ำ)
+    # Normal consonants (ก-ฮ and cut-base variants) -> Upper-level High Tone (0xF700 - 0xF704)
+    $s = [System.Text.RegularExpressions.Regex]::Replace($s, "([\u0E01-\u0E2E\uF70F\uF710])([\u0E48-\u0E4C])\u0E33", {
+        param($m) $m.Groups[1].Value + $highToneMap[$m.Groups[2].Value[0]] + [char]0x0E33
+    })
+    $s = [System.Text.RegularExpressions.Regex]::Replace($s, "([\u0E01-\u0E2E\uF70F\uF710])\u0E33([\u0E48-\u0E4C])", {
+        param($m) $m.Groups[1].Value + $highToneMap[$m.Groups[2].Value[0]] + [char]0x0E33
+    })
+
+    # Fallback tone mark adjacent to Sara Am
     $s = [System.Text.RegularExpressions.Regex]::Replace($s, "([\u0E48-\u0E4C])\u0E33", {
         param($m) $highToneMap[$m.Groups[1].Value[0]] + [char]0x0E33
     })
@@ -120,9 +134,20 @@ function Draw-BitmapText {
             $glyph = $map[$c]
             $isCombining = ($glyph.type -like "*tone*" -or $glyph.type -like "*vowel*" -or $glyph.type -like "*mark*") -and ($glyph.type -ne "normal")
 
+            $xoff = $glyph.xoffset
+            $yoff = $glyph.yoffset
+            if ($c -ge 0xF700 -and $c -le 0xF704) {
+                $isNextAm = ($i + 1 -lt $shaped.Length -and [int][char]$shaped[$i + 1] -eq 0x0E33)
+                $isPrevAm = ($i - 1 -ge 0 -and [int][char]$shaped[$i - 1] -eq 0x0E33)
+                if ($isNextAm -or $isPrevAm) {
+                    $xoff += 3
+                    $yoff -= 3
+                }
+            }
+
             if ($glyph.width -gt 0 -and $glyph.height -gt 0) {
                 $srcRect = New-Object System.Drawing.Rectangle $glyph.x, $glyph.y, $glyph.width, $glyph.height
-                $dstRect = New-Object System.Drawing.Rectangle ($curX + $glyph.xoffset), ($startY + $glyph.yoffset), $glyph.width, $glyph.height
+                $dstRect = New-Object System.Drawing.Rectangle ($curX + $xoff), ($startY + $yoff), $glyph.width, $glyph.height
                 $gfx.DrawImage($atlasBmp, $dstRect, $srcRect, [System.Drawing.GraphicsUnit]::Pixel)
             }
 

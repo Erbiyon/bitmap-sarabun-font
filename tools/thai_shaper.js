@@ -54,12 +54,25 @@ function shapeThaiText(str) {
     '\u0E4D': '\uF71A'  // Nikhahit Shifted
   };
 
-  // 2. SARA AM (ำ) and Tone Marks
-  // Tall consonants with Sara Am and Tone (e.g. ปล้ำ, ป้ำ)
+  // 2. SARA AM (ำ U+0E33) and Tone Marks (่, ้, ๊, ๋, ์ U+0E48 - U+0E4C)
+  // Normalize decomposed Sara Am (ํ U+0E4D + า U+0E32) if present
+  s = s.replace(/\u0E4D\u0E32/g, '\u0E33');
+  s = s.replace(/([\u0E48-\u0E4C])\u0E4D\u0E32/g, '$1\u0E33');
+  s = s.replace(/\u0E4D([\u0E48-\u0E4C])\u0E32/g, '$1\u0E33');
+
+  // Both typing sequences:
+  // Case A: [Consonant] + [Tone Mark] + [Sara Am]  (e.g. น + ้ + ำ)
+  // Case B: [Consonant] + [Sara Am] + [Tone Mark]  (e.g. น + ำ + ้)
+
+  // Tall consonants (ป, ฝ, ฟ, ฬ, ผ) -> High Shifted Tone (0xF70A - 0xF70E)
   s = s.replace(/([\u0E1B\u0E1D\u0E1F\u0E2C\u0E1C])([\u0E48-\u0E4C])\u0E33/g, (m, c, t) => c + highShiftedToneMap[t] + '\u0E33');
   s = s.replace(/([\u0E1B\u0E1D\u0E1F\u0E2C\u0E1C])\u0E33([\u0E48-\u0E4C])/g, (m, c, t) => c + highShiftedToneMap[t] + '\u0E33');
 
-  // Normal consonants with Sara Am and Tone (e.g. น้ำ, ค่ำ, ถ้ำ)
+  // Normal Thai consonants (ก-ฮ and cut-base variants) -> Upper-level High Tone (0xF700 - 0xF704)
+  s = s.replace(/([\u0E01-\u0E2E\uF70F\uF710])([\u0E48-\u0E4C])\u0E33/g, (m, c, t) => c + highToneMap[t] + '\u0E33');
+  s = s.replace(/([\u0E01-\u0E2E\uF70F\uF710])\u0E33([\u0E48-\u0E4C])/g, (m, c, t) => c + highToneMap[t] + '\u0E33');
+
+  // Standalone / fallback tone mark adjacent to Sara Am
   s = s.replace(/([\u0E48-\u0E4C])\u0E33/g, (m, t) => highToneMap[t] + '\u0E33');
   s = s.replace(/\u0E33([\u0E48-\u0E4C])/g, (m, t) => highToneMap[t] + '\u0E33');
 
