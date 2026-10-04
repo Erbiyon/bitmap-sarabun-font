@@ -1,0 +1,149 @@
+[
+  {
+    "id": "FONT_ID_PD_12",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew Bold.ttf",
+    "fontSize": 29.0,
+    "isBold": 1,
+    "capHeight": 12.0
+  },
+  {
+    "id": "FONT_ID_PD_14",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew Bold.ttf",
+    "fontSize": 34.0,
+    "isBold": 1,
+    "capHeight": 13.5
+  },
+  {
+    "id": "FONT_ID_PD_16",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew Bold.ttf",
+    "fontSize": 38.0,
+    "isBold": 1,
+    "capHeight": 15.0
+  },
+  {
+    "id": "FONT_ID_PD_20",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew Bold.ttf",
+    "fontSize": 48.0,
+    "isBold": 1,
+    "capHeight": 19.0
+  },
+  {
+    "id": "FONT_ID_PD_23",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew Bold.ttf",
+    "fontSize": 55.0,
+    "isBold": 1,
+    "capHeight": 22.0
+  },
+  {
+    "id": "FONT_ID_PD_32",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew Bold.ttf",
+    "fontSize": 76.0,
+    "isBold": 1,
+    "capHeight": 30.0
+  },
+  {
+    "id": "FONT_ID_NOTO_9",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 21.0,
+    "isBold": 0,
+    "capHeight": 9.0
+  },
+  {
+    "id": "FONT_ID_NOTO_13",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 29.0,
+    "isBold": 0,
+    "capHeight": 12.0
+  },
+  {
+    "id": "FONT_ID_NOTO_15",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 33.0,
+    "isBold": 0,
+    "capHeight": 14.0
+  },
+  {
+    "id": "FONT_ID_NOTO_17",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 37.0,
+    "isBold": 0,
+    "capHeight": 16.0
+  },
+  {
+    "id": "FONT_ID_NOTO_20",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 44.0,
+    "isBold": 0,
+    "capHeight": 19.0
+  },
+  {
+    "id": "FONT_ID_NOTO_23",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 51.0,
+    "isBold": 0,
+    "capHeight": 22.0
+  },
+  {
+    "id": "FONT_ID_MATRIXBOOK_10",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 18.0,
+    "isBold": 0,
+    "capHeight": 7.0
+  },
+  {
+    "id": "FONT_ID_MATRIXBOOK_12",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 20.0,
+    "isBold": 0,
+    "capHeight": 8.0
+  },
+  {
+    "id": "FONT_ID_MATRIXBOOK_14",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 24.0,
+    "isBold": 0,
+    "capHeight": 9.5
+  },
+  {
+    "id": "FONT_ID_MATRIXBOOK_16",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 26.0,
+    "isBold": 0,
+    "capHeight": 10.5
+  },
+  {
+    "id": "FONT_ID_MATRIXBOOK_18",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 28.0,
+    "isBold": 0,
+    "capHeight": 11.5
+  },
+  {
+    "id": "FONT_ID_MATRIXCAPS_21",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew Bold.ttf",
+    "fontSize": 50.0,
+    "isBold": 1,
+    "capHeight": 20.0
+  },
+  {
+    "id": "FONT_ID_STONESERIFBOLD_14",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew Bold.ttf",
+    "fontSize": 27.0,
+    "isBold": 1,
+    "capHeight": 10.5
+  },
+  {
+    "id": "FONT_ID_STONESERIFBOLD_16",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew Bold.ttf",
+    "fontSize": 31.0,
+    "isBold": 1,
+    "capHeight": 12.0
+  },
+  {
+    "id": "FONT_ID_USERNAME",
+    "fontFile": "C:\\Users\\mkanl\\AppData\\Local\\Microsoft\\Windows\\Fonts\\THSarabunNew.ttf",
+    "fontSize": 44.0,
+    "isBold": 0,
+    "capHeight": 19.0
+  }
+]

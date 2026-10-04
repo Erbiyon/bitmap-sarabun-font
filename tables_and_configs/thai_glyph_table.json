@@ -1,0 +1,656 @@
+[
+  {
+    "code": 3585,
+    "gid": 217,
+    "name": "ก",
+    "type": "consonant"
+  },
+  {
+    "code": 3586,
+    "gid": 218,
+    "name": "ข",
+    "type": "consonant"
+  },
+  {
+    "code": 3587,
+    "gid": 219,
+    "name": "ฃ",
+    "type": "consonant"
+  },
+  {
+    "code": 3588,
+    "gid": 220,
+    "name": "ค",
+    "type": "consonant"
+  },
+  {
+    "code": 3589,
+    "gid": 221,
+    "name": "ฅ",
+    "type": "consonant"
+  },
+  {
+    "code": 3590,
+    "gid": 222,
+    "name": "ฆ",
+    "type": "consonant"
+  },
+  {
+    "code": 3591,
+    "gid": 223,
+    "name": "ง",
+    "type": "consonant"
+  },
+  {
+    "code": 3592,
+    "gid": 224,
+    "name": "จ",
+    "type": "consonant"
+  },
+  {
+    "code": 3593,
+    "gid": 225,
+    "name": "ฉ",
+    "type": "consonant"
+  },
+  {
+    "code": 3594,
+    "gid": 226,
+    "name": "ช",
+    "type": "consonant"
+  },
+  {
+    "code": 3595,
+    "gid": 227,
+    "name": "ซ",
+    "type": "consonant"
+  },
+  {
+    "code": 3596,
+    "gid": 228,
+    "name": "ฌ",
+    "type": "consonant"
+  },
+  {
+    "code": 3597,
+    "gid": 229,
+    "name": "ญ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3598,
+    "gid": 230,
+    "name": "ฎ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3599,
+    "gid": 231,
+    "name": "ฏ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3600,
+    "gid": 232,
+    "name": "ฐ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3601,
+    "gid": 233,
+    "name": "ฑ",
+    "type": "consonant"
+  },
+  {
+    "code": 3602,
+    "gid": 234,
+    "name": "ฒ",
+    "type": "consonant"
+  },
+  {
+    "code": 3603,
+    "gid": 235,
+    "name": "ณ",
+    "type": "consonant"
+  },
+  {
+    "code": 3604,
+    "gid": 236,
+    "name": "ด",
+    "type": "consonant"
+  },
+  {
+    "code": 3605,
+    "gid": 237,
+    "name": "ต",
+    "type": "consonant"
+  },
+  {
+    "code": 3606,
+    "gid": 238,
+    "name": "ถ",
+    "type": "consonant"
+  },
+  {
+    "code": 3607,
+    "gid": 239,
+    "name": "ท",
+    "type": "consonant"
+  },
+  {
+    "code": 3608,
+    "gid": 240,
+    "name": "ธ",
+    "type": "consonant"
+  },
+  {
+    "code": 3609,
+    "gid": 241,
+    "name": "น",
+    "type": "consonant"
+  },
+  {
+    "code": 3610,
+    "gid": 242,
+    "name": "บ",
+    "type": "consonant"
+  },
+  {
+    "code": 3611,
+    "gid": 243,
+    "name": "ป",
+    "type": "consonant_tall"
+  },
+  {
+    "code": 3612,
+    "gid": 244,
+    "name": "ผ",
+    "type": "consonant_tall"
+  },
+  {
+    "code": 3613,
+    "gid": 245,
+    "name": "ฝ",
+    "type": "consonant_tall"
+  },
+  {
+    "code": 3614,
+    "gid": 246,
+    "name": "พ",
+    "type": "consonant"
+  },
+  {
+    "code": 3615,
+    "gid": 247,
+    "name": "ฟ",
+    "type": "consonant_tall"
+  },
+  {
+    "code": 3616,
+    "gid": 248,
+    "name": "ภ",
+    "type": "consonant"
+  },
+  {
+    "code": 3617,
+    "gid": 249,
+    "name": "ม",
+    "type": "consonant"
+  },
+  {
+    "code": 3618,
+    "gid": 250,
+    "name": "ย",
+    "type": "consonant"
+  },
+  {
+    "code": 3619,
+    "gid": 251,
+    "name": "ร",
+    "type": "consonant"
+  },
+  {
+    "code": 3620,
+    "gid": 252,
+    "name": "ฤ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3621,
+    "gid": 253,
+    "name": "ล",
+    "type": "consonant"
+  },
+  {
+    "code": 3622,
+    "gid": 254,
+    "name": "ฦ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3623,
+    "gid": 255,
+    "name": "ว",
+    "type": "consonant"
+  },
+  {
+    "code": 3624,
+    "gid": 256,
+    "name": "ศ",
+    "type": "consonant_tall"
+  },
+  {
+    "code": 3625,
+    "gid": 257,
+    "name": "ษ",
+    "type": "consonant"
+  },
+  {
+    "code": 3626,
+    "gid": 258,
+    "name": "ส",
+    "type": "consonant_tall"
+  },
+  {
+    "code": 3627,
+    "gid": 259,
+    "name": "ห",
+    "type": "consonant"
+  },
+  {
+    "code": 3628,
+    "gid": 260,
+    "name": "ฬ",
+    "type": "consonant_tall"
+  },
+  {
+    "code": 3629,
+    "gid": 288,
+    "name": "อ",
+    "type": "consonant"
+  },
+  {
+    "code": 3630,
+    "gid": 289,
+    "name": "ฮ",
+    "type": "consonant_tall"
+  },
+  {
+    "code": 3631,
+    "gid": 290,
+    "name": "ฯ",
+    "type": "normal"
+  },
+  {
+    "code": 3632,
+    "gid": 261,
+    "name": "ะ",
+    "type": "normal"
+  },
+  {
+    "code": 3634,
+    "gid": 263,
+    "name": "า",
+    "type": "normal"
+  },
+  {
+    "code": 3635,
+    "gid": 264,
+    "name": "ำ",
+    "type": "normal"
+  },
+  {
+    "code": 3647,
+    "gid": 272,
+    "name": "฿",
+    "type": "normal"
+  },
+  {
+    "code": 3648,
+    "gid": 273,
+    "name": "เ",
+    "type": "normal"
+  },
+  {
+    "code": 3649,
+    "gid": 274,
+    "name": "แ",
+    "type": "normal"
+  },
+  {
+    "code": 3650,
+    "gid": 275,
+    "name": "โ",
+    "type": "normal"
+  },
+  {
+    "code": 3651,
+    "gid": 276,
+    "name": "ใ",
+    "type": "normal"
+  },
+  {
+    "code": 3652,
+    "gid": 277,
+    "name": "ไ",
+    "type": "normal"
+  },
+  {
+    "code": 3653,
+    "gid": 278,
+    "name": "ๅ",
+    "type": "normal"
+  },
+  {
+    "code": 3654,
+    "gid": 279,
+    "name": "ๆ",
+    "type": "normal"
+  },
+  {
+    "code": 3663,
+    "gid": 291,
+    "name": "๏",
+    "type": "normal"
+  },
+  {
+    "code": 3674,
+    "gid": 292,
+    "name": "๚",
+    "type": "normal"
+  },
+  {
+    "code": 3675,
+    "gid": 293,
+    "name": "๛",
+    "type": "normal"
+  },
+  {
+    "code": 3664,
+    "gid": 294,
+    "name": "๐",
+    "type": "normal"
+  },
+  {
+    "code": 3665,
+    "gid": 295,
+    "name": "๑",
+    "type": "normal"
+  },
+  {
+    "code": 3666,
+    "gid": 296,
+    "name": "๒",
+    "type": "normal"
+  },
+  {
+    "code": 3667,
+    "gid": 297,
+    "name": "๓",
+    "type": "normal"
+  },
+  {
+    "code": 3668,
+    "gid": 298,
+    "name": "๔",
+    "type": "normal"
+  },
+  {
+    "code": 3669,
+    "gid": 299,
+    "name": "๕",
+    "type": "normal"
+  },
+  {
+    "code": 3670,
+    "gid": 300,
+    "name": "๖",
+    "type": "normal"
+  },
+  {
+    "code": 3671,
+    "gid": 301,
+    "name": "๗",
+    "type": "normal"
+  },
+  {
+    "code": 3672,
+    "gid": 302,
+    "name": "๘",
+    "type": "normal"
+  },
+  {
+    "code": 3673,
+    "gid": 303,
+    "name": "๙",
+    "type": "normal"
+  },
+  {
+    "code": 3633,
+    "gid": 262,
+    "name": "ั (Mai Han-Akat)",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3636,
+    "gid": 265,
+    "name": "ิ (Sara I)",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3637,
+    "gid": 266,
+    "name": "ี (Sara Ii)",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3638,
+    "gid": 267,
+    "name": "ึ (Sara Ue)",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3639,
+    "gid": 268,
+    "name": "ื (Sara Uee)",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3655,
+    "gid": 280,
+    "name": "็ (Maitaikhu)",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3661,
+    "gid": 286,
+    "name": "ํ (Nikhahit)",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3662,
+    "gid": 287,
+    "name": "๎ (Yamakkan)",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3640,
+    "gid": 269,
+    "name": "ุ (Sara U)",
+    "type": "lower_vowel"
+  },
+  {
+    "code": 3641,
+    "gid": 270,
+    "name": "ู (Sara Uu)",
+    "type": "lower_vowel"
+  },
+  {
+    "code": 3642,
+    "gid": 271,
+    "name": "ฺ (Phinthu)",
+    "type": "lower_vowel"
+  },
+  {
+    "code": 3656,
+    "gid": 281,
+    "name": "่ (Mai Ek)",
+    "type": "tone_normal"
+  },
+  {
+    "code": 3657,
+    "gid": 282,
+    "name": "้ (Mai Tho)",
+    "type": "tone_normal"
+  },
+  {
+    "code": 3658,
+    "gid": 283,
+    "name": "๊ (Mai Tri)",
+    "type": "tone_normal"
+  },
+  {
+    "code": 3659,
+    "gid": 284,
+    "name": "๋ (Mai Chattawa)",
+    "type": "tone_normal"
+  },
+  {
+    "code": 3660,
+    "gid": 285,
+    "name": "์ (Thanthakhat)",
+    "type": "tone_normal"
+  },
+  {
+    "code": 63251,
+    "gid": 361,
+    "name": "่ (High Mai Ek)",
+    "type": "tone_high"
+  },
+  {
+    "code": 63252,
+    "gid": 362,
+    "name": "้ (High Mai Tho)",
+    "type": "tone_high"
+  },
+  {
+    "code": 63253,
+    "gid": 363,
+    "name": "๊ (High Mai Tri)",
+    "type": "tone_high"
+  },
+  {
+    "code": 63254,
+    "gid": 364,
+    "name": "๋ (High Mai Chattawa)",
+    "type": "tone_high"
+  },
+  {
+    "code": 63255,
+    "gid": 365,
+    "name": "์ (High Thanthakhat)",
+    "type": "tone_high"
+  },
+  {
+    "code": 63248,
+    "gid": 358,
+    "name": "ั (Shifted Mai Han-Akat)",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63233,
+    "gid": 343,
+    "name": "ิ (Shifted Sara I)",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63234,
+    "gid": 344,
+    "name": "ี (Shifted Sara Ii)",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63235,
+    "gid": 345,
+    "name": "ึ (Shifted Sara Ue)",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63236,
+    "gid": 346,
+    "name": "ื (Shifted Sara Uee)",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63249,
+    "gid": 359,
+    "name": "ํ (Shifted Nikhahit)",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63250,
+    "gid": 360,
+    "name": "็ (Shifted Maitaikhu)",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63237,
+    "gid": 347,
+    "name": "่ (Shifted Mai Ek)",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 63238,
+    "gid": 348,
+    "name": "้ (Shifted Mai Tho)",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 63239,
+    "gid": 349,
+    "name": "๊ (Shifted Mai Tri)",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 63240,
+    "gid": 350,
+    "name": "๋ (Shifted Mai Chattawa)",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 63241,
+    "gid": 351,
+    "name": "์ (Shifted Thanthakhat)",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 63256,
+    "gid": 366,
+    "name": "ุ (Short Sara U)",
+    "type": "lower_vowel"
+  },
+  {
+    "code": 63257,
+    "gid": 367,
+    "name": "ู (Short Sara Uu)",
+    "type": "lower_vowel"
+  },
+  {
+    "code": 63258,
+    "gid": 368,
+    "name": "ฺ (Short Phinthu)",
+    "type": "lower_vowel"
+  },
+  {
+    "code": 63232,
+    "gid": 342,
+    "name": "ฐ (No tail)",
+    "type": "consonant"
+  },
+  {
+    "code": 63247,
+    "gid": 357,
+    "name": "ญ (No tail)",
+    "type": "consonant"
+  }
+]

@@ -1,0 +1,1142 @@
+﻿[
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  79,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  214,
+        "h":  9,
+        "code":  3585
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  89,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  215,
+        "h":  9,
+        "code":  3586
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  99,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  216,
+        "h":  9,
+        "code":  3587
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  109,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  217,
+        "h":  9,
+        "code":  3588
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  119,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  218,
+        "h":  9,
+        "code":  3589
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  129,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  219,
+        "h":  9,
+        "code":  3590
+    },
+    {
+        "w":  6,
+        "atlasY":  4,
+        "atlasX":  139,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  220,
+        "h":  9,
+        "code":  3591
+    },
+    {
+        "w":  7,
+        "atlasY":  4,
+        "atlasX":  147,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  221,
+        "h":  9,
+        "code":  3592
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  156,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  222,
+        "h":  9,
+        "code":  3593
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  166,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  223,
+        "h":  9,
+        "code":  3594
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  177,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  224,
+        "h":  9,
+        "code":  3595
+    },
+    {
+        "w":  11,
+        "atlasY":  4,
+        "atlasX":  188,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  225,
+        "h":  9,
+        "code":  3596
+    },
+    {
+        "w":  11,
+        "atlasY":  4,
+        "atlasX":  201,
+        "name":  null,
+        "type":  "consonant_descender",
+        "gid":  226,
+        "h":  13,
+        "code":  3597
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  214,
+        "name":  null,
+        "type":  "consonant_descender",
+        "gid":  227,
+        "h":  14,
+        "code":  3598
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  225,
+        "name":  null,
+        "type":  "consonant_descender",
+        "gid":  228,
+        "h":  14,
+        "code":  3599
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  236,
+        "name":  null,
+        "type":  "consonant_descender",
+        "gid":  229,
+        "h":  14,
+        "code":  3600
+    },
+    {
+        "w":  10,
+        "atlasY":  4,
+        "atlasX":  247,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  230,
+        "h":  9,
+        "code":  3601
+    },
+    {
+        "w":  11,
+        "atlasY":  4,
+        "atlasX":  259,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  231,
+        "h":  9,
+        "code":  3602
+    },
+    {
+        "w":  11,
+        "atlasY":  4,
+        "atlasX":  272,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  232,
+        "h":  9,
+        "code":  3603
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  285,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  233,
+        "h":  9,
+        "code":  3604
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  295,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  234,
+        "h":  9,
+        "code":  3605
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  305,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  235,
+        "h":  9,
+        "code":  3606
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  315,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  236,
+        "h":  9,
+        "code":  3607
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  326,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  237,
+        "h":  9,
+        "code":  3608
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  337,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  238,
+        "h":  9,
+        "code":  3609
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  348,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  239,
+        "h":  9,
+        "code":  3610
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  359,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  240,
+        "h":  12,
+        "code":  3611
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  370,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  241,
+        "h":  9,
+        "code":  3612
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  380,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  242,
+        "h":  12,
+        "code":  3613
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  390,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  243,
+        "h":  9,
+        "code":  3614
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  401,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  244,
+        "h":  12,
+        "code":  3615
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  412,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  245,
+        "h":  9,
+        "code":  3616
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  423,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  246,
+        "h":  9,
+        "code":  3617
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  433,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  247,
+        "h":  9,
+        "code":  3618
+    },
+    {
+        "w":  7,
+        "atlasY":  4,
+        "atlasX":  443,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  248,
+        "h":  9,
+        "code":  3619
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  452,
+        "name":  null,
+        "type":  "consonant_descender",
+        "gid":  249,
+        "h":  13,
+        "code":  3620
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  462,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  250,
+        "h":  9,
+        "code":  3621
+    },
+    {
+        "w":  9,
+        "atlasY":  4,
+        "atlasX":  472,
+        "name":  null,
+        "type":  "consonant_descender",
+        "gid":  251,
+        "h":  13,
+        "code":  3622
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  483,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  252,
+        "h":  9,
+        "code":  3623
+    },
+    {
+        "w":  8,
+        "atlasY":  4,
+        "atlasX":  493,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  253,
+        "h":  10,
+        "code":  3624
+    },
+    {
+        "w":  10,
+        "atlasY":  20,
+        "atlasX":  79,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  254,
+        "h":  9,
+        "code":  3625
+    },
+    {
+        "w":  8,
+        "atlasY":  20,
+        "atlasX":  91,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  255,
+        "h":  10,
+        "code":  3626
+    },
+    {
+        "w":  9,
+        "atlasY":  20,
+        "atlasX":  101,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  256,
+        "h":  9,
+        "code":  3627
+    },
+    {
+        "w":  10,
+        "atlasY":  20,
+        "atlasX":  112,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  257,
+        "h":  10,
+        "code":  3628
+    },
+    {
+        "w":  8,
+        "atlasY":  20,
+        "atlasX":  124,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  258,
+        "h":  9,
+        "code":  3629
+    },
+    {
+        "w":  8,
+        "atlasY":  20,
+        "atlasX":  134,
+        "name":  null,
+        "type":  "consonant",
+        "gid":  259,
+        "h":  9,
+        "code":  3630
+    },
+    {
+        "w":  8,
+        "atlasY":  20,
+        "atlasX":  144,
+        "name":  null,
+        "type":  "normal",
+        "gid":  260,
+        "h":  9,
+        "code":  3631
+    },
+    {
+        "w":  7,
+        "atlasY":  20,
+        "atlasX":  154,
+        "name":  null,
+        "type":  "normal",
+        "gid":  261,
+        "h":  8,
+        "code":  3632
+    },
+    {
+        "w":  8,
+        "atlasY":  20,
+        "atlasX":  163,
+        "name":  null,
+        "type":  "upper_vowel",
+        "gid":  262,
+        "h":  3,
+        "code":  3633
+    },
+    {
+        "w":  6,
+        "atlasY":  20,
+        "atlasX":  173,
+        "name":  null,
+        "type":  "normal",
+        "gid":  263,
+        "h":  9,
+        "code":  3634
+    },
+    {
+        "w":  10,
+        "atlasY":  20,
+        "atlasX":  181,
+        "name":  null,
+        "type":  "normal",
+        "gid":  264,
+        "h":  13,
+        "code":  3635
+    },
+    {
+        "w":  8,
+        "atlasY":  20,
+        "atlasX":  193,
+        "name":  null,
+        "type":  "upper_vowel",
+        "gid":  265,
+        "h":  3,
+        "code":  3636
+    },
+    {
+        "w":  8,
+        "atlasY":  20,
+        "atlasX":  203,
+        "name":  null,
+        "type":  "upper_vowel",
+        "gid":  266,
+        "h":  4,
+        "code":  3637
+    },
+    {
+        "w":  8,
+        "atlasY":  20,
+        "atlasX":  213,
+        "name":  null,
+        "type":  "upper_vowel",
+        "gid":  267,
+        "h":  4,
+        "code":  3638
+    },
+    {
+        "w":  8,
+        "atlasY":  20,
+        "atlasX":  223,
+        "name":  null,
+        "type":  "upper_vowel",
+        "gid":  268,
+        "h":  4,
+        "code":  3639
+    },
+    {
+        "w":  4,
+        "atlasY":  20,
+        "atlasX":  233,
+        "name":  null,
+        "type":  "lower_vowel",
+        "gid":  269,
+        "h":  4,
+        "code":  3640
+    },
+    {
+        "w":  6,
+        "atlasY":  20,
+        "atlasX":  239,
+        "name":  null,
+        "type":  "lower_vowel",
+        "gid":  270,
+        "h":  4,
+        "code":  3641
+    },
+    {
+        "w":  3,
+        "atlasY":  20,
+        "atlasX":  247,
+        "name":  null,
+        "type":  "lower_vowel",
+        "gid":  271,
+        "h":  1,
+        "code":  3642
+    },
+    {
+        "w":  7,
+        "atlasY":  20,
+        "atlasX":  252,
+        "name":  null,
+        "type":  "normal",
+        "gid":  272,
+        "h":  12,
+        "code":  3647
+    },
+    {
+        "w":  5,
+        "atlasY":  20,
+        "atlasX":  261,
+        "name":  null,
+        "type":  "normal",
+        "gid":  273,
+        "h":  9,
+        "code":  3648
+    },
+    {
+        "w":  8,
+        "atlasY":  20,
+        "atlasX":  268,
+        "name":  null,
+        "type":  "normal",
+        "gid":  274,
+        "h":  9,
+        "code":  3649
+    },
+    {
+        "w":  7,
+        "atlasY":  20,
+        "atlasX":  278,
+        "name":  null,
+        "type":  "normal",
+        "gid":  275,
+        "h":  14,
+        "code":  3650
+    },
+    {
+        "w":  7,
+        "atlasY":  20,
+        "atlasX":  287,
+        "name":  null,
+        "type":  "normal",
+        "gid":  276,
+        "h":  14,
+        "code":  3651
+    },
+    {
+        "w":  6,
+        "atlasY":  20,
+        "atlasX":  296,
+        "name":  null,
+        "type":  "normal",
+        "gid":  277,
+        "h":  14,
+        "code":  3652
+    },
+    {
+        "w":  6,
+        "atlasY":  20,
+        "atlasX":  304,
+        "name":  null,
+        "type":  "normal",
+        "gid":  278,
+        "h":  13,
+        "code":  3653
+    },
+    {
+        "w":  8,
+        "atlasY":  20,
+        "atlasX":  312,
+        "name":  null,
+        "type":  "normal",
+        "gid":  279,
+        "h":  13,
+        "code":  3654
+    },
+    {
+        "w":  7,
+        "atlasY":  20,
+        "atlasX":  322,
+        "name":  null,
+        "type":  "upper_vowel",
+        "gid":  280,
+        "h":  5,
+        "code":  3655
+    },
+    {
+        "w":  3,
+        "atlasY":  20,
+        "atlasX":  331,
+        "name":  null,
+        "type":  "tone_mark",
+        "gid":  281,
+        "h":  3,
+        "code":  3656
+    },
+    {
+        "w":  6,
+        "atlasY":  20,
+        "atlasX":  336,
+        "name":  null,
+        "type":  "tone_mark",
+        "gid":  282,
+        "h":  4,
+        "code":  3657
+    },
+    {
+        "w":  7,
+        "atlasY":  20,
+        "atlasX":  344,
+        "name":  null,
+        "type":  "tone_mark",
+        "gid":  283,
+        "h":  4,
+        "code":  3658
+    },
+    {
+        "w":  5,
+        "atlasY":  20,
+        "atlasX":  353,
+        "name":  null,
+        "type":  "tone_mark",
+        "gid":  284,
+        "h":  3,
+        "code":  3659
+    },
+    {
+        "w":  4,
+        "atlasY":  20,
+        "atlasX":  360,
+        "name":  null,
+        "type":  "tone_mark",
+        "gid":  285,
+        "h":  4,
+        "code":  3660
+    },
+    {
+        "w":  4,
+        "atlasY":  20,
+        "atlasX":  366,
+        "name":  null,
+        "type":  "upper_vowel",
+        "gid":  286,
+        "h":  3,
+        "code":  3661
+    },
+    {
+        "w":  5,
+        "atlasY":  20,
+        "atlasX":  372,
+        "name":  null,
+        "type":  "upper_vowel",
+        "gid":  287,
+        "h":  4,
+        "code":  3662
+    },
+    {
+        "w":  9,
+        "atlasY":  20,
+        "atlasX":  379,
+        "name":  null,
+        "type":  "normal",
+        "gid":  288,
+        "h":  7,
+        "code":  3663
+    },
+    {
+        "w":  9,
+        "atlasY":  20,
+        "atlasX":  390,
+        "name":  null,
+        "type":  "normal",
+        "gid":  289,
+        "h":  6,
+        "code":  3664
+    },
+    {
+        "w":  10,
+        "atlasY":  20,
+        "atlasX":  401,
+        "name":  null,
+        "type":  "normal",
+        "gid":  290,
+        "h":  6,
+        "code":  3665
+    },
+    {
+        "w":  10,
+        "atlasY":  20,
+        "atlasX":  413,
+        "name":  null,
+        "type":  "normal",
+        "gid":  291,
+        "h":  10,
+        "code":  3666
+    },
+    {
+        "w":  10,
+        "atlasY":  20,
+        "atlasX":  425,
+        "name":  null,
+        "type":  "normal",
+        "gid":  292,
+        "h":  6,
+        "code":  3667
+    },
+    {
+        "w":  10,
+        "atlasY":  20,
+        "atlasX":  437,
+        "name":  null,
+        "type":  "normal",
+        "gid":  293,
+        "h":  9,
+        "code":  3668
+    },
+    {
+        "w":  11,
+        "atlasY":  20,
+        "atlasX":  449,
+        "name":  null,
+        "type":  "normal",
+        "gid":  294,
+        "h":  9,
+        "code":  3669
+    },
+    {
+        "w":  10,
+        "atlasY":  20,
+        "atlasX":  462,
+        "name":  null,
+        "type":  "normal",
+        "gid":  295,
+        "h":  9,
+        "code":  3670
+    },
+    {
+        "w":  12,
+        "atlasY":  20,
+        "atlasX":  474,
+        "name":  null,
+        "type":  "normal",
+        "gid":  296,
+        "h":  9,
+        "code":  3671
+    },
+    {
+        "w":  10,
+        "atlasY":  20,
+        "atlasX":  488,
+        "name":  null,
+        "type":  "normal",
+        "gid":  297,
+        "h":  9,
+        "code":  3672
+    },
+    {
+        "w":  10,
+        "atlasY":  36,
+        "atlasX":  79,
+        "name":  null,
+        "type":  "normal",
+        "gid":  298,
+        "h":  9,
+        "code":  3673
+    },
+    {
+        "w":  11,
+        "atlasY":  36,
+        "atlasX":  91,
+        "name":  null,
+        "type":  "normal",
+        "gid":  299,
+        "h":  9,
+        "code":  3674
+    },
+    {
+        "w":  14,
+        "atlasY":  36,
+        "atlasX":  104,
+        "name":  null,
+        "type":  "normal",
+        "gid":  300,
+        "h":  7,
+        "code":  3675
+    },
+    {
+        "w":  2,
+        "atlasY":  36,
+        "atlasX":  120,
+        "name":  "Mai Ek High",
+        "type":  "tone_high",
+        "gid":  361,
+        "h":  3,
+        "code":  3680
+    },
+    {
+        "w":  6,
+        "atlasY":  36,
+        "atlasX":  124,
+        "name":  "Mai Tho High",
+        "type":  "tone_high",
+        "gid":  362,
+        "h":  4,
+        "code":  3681
+    },
+    {
+        "w":  7,
+        "atlasY":  36,
+        "atlasX":  132,
+        "name":  "Mai Tri High",
+        "type":  "tone_high",
+        "gid":  363,
+        "h":  4,
+        "code":  3682
+    },
+    {
+        "w":  4,
+        "atlasY":  36,
+        "atlasX":  141,
+        "name":  "Mai Chattawa High",
+        "type":  "tone_high",
+        "gid":  364,
+        "h":  3,
+        "code":  3683
+    },
+    {
+        "w":  5,
+        "atlasY":  36,
+        "atlasX":  147,
+        "name":  "Thanthakhat High",
+        "type":  "tone_high",
+        "gid":  365,
+        "h":  4,
+        "code":  3684
+    },
+    {
+        "w":  2,
+        "atlasY":  36,
+        "atlasX":  154,
+        "name":  "Mai Ek Shifted",
+        "type":  "tone_shifted",
+        "gid":  347,
+        "h":  3,
+        "code":  3685
+    },
+    {
+        "w":  7,
+        "atlasY":  36,
+        "atlasX":  158,
+        "name":  "Mai Tho Shifted",
+        "type":  "tone_shifted",
+        "gid":  348,
+        "h":  4,
+        "code":  3686
+    },
+    {
+        "w":  8,
+        "atlasY":  36,
+        "atlasX":  167,
+        "name":  "Mai Tri Shifted",
+        "type":  "tone_shifted",
+        "gid":  349,
+        "h":  4,
+        "code":  3687
+    },
+    {
+        "w":  5,
+        "atlasY":  36,
+        "atlasX":  177,
+        "name":  "Mai Chattawa Shifted",
+        "type":  "tone_shifted",
+        "gid":  350,
+        "h":  3,
+        "code":  3688
+    },
+    {
+        "w":  5,
+        "atlasY":  36,
+        "atlasX":  184,
+        "name":  "Thanthakhat Shifted",
+        "type":  "tone_shifted",
+        "gid":  351,
+        "h":  5,
+        "code":  3689
+    },
+    {
+        "w":  8,
+        "atlasY":  36,
+        "atlasX":  191,
+        "name":  "Mai Han-Akat Shifted",
+        "type":  "upper_vowel_shifted",
+        "gid":  262,
+        "h":  3,
+        "code":  3690
+    },
+    {
+        "w":  8,
+        "atlasY":  36,
+        "atlasX":  201,
+        "name":  "Sara I Shifted",
+        "type":  "upper_vowel_shifted",
+        "gid":  265,
+        "h":  3,
+        "code":  3691
+    },
+    {
+        "w":  8,
+        "atlasY":  36,
+        "atlasX":  211,
+        "name":  "Sara Ii Shifted",
+        "type":  "upper_vowel_shifted",
+        "gid":  266,
+        "h":  4,
+        "code":  3692
+    },
+    {
+        "w":  8,
+        "atlasY":  36,
+        "atlasX":  221,
+        "name":  "Sara Ue Shifted",
+        "type":  "upper_vowel_shifted",
+        "gid":  267,
+        "h":  4,
+        "code":  3693
+    },
+    {
+        "w":  8,
+        "atlasY":  36,
+        "atlasX":  231,
+        "name":  "Sara Uee Shifted",
+        "type":  "upper_vowel_shifted",
+        "gid":  268,
+        "h":  4,
+        "code":  3694
+    },
+    {
+        "w":  7,
+        "atlasY":  36,
+        "atlasX":  241,
+        "name":  "Maitaikhu Shifted",
+        "type":  "upper_vowel_shifted",
+        "gid":  280,
+        "h":  5,
+        "code":  3695
+    },
+    {
+        "w":  4,
+        "atlasY":  36,
+        "atlasX":  250,
+        "name":  "Nikhahit Shifted",
+        "type":  "upper_vowel_shifted",
+        "gid":  286,
+        "h":  3,
+        "code":  3696
+    },
+    {
+        "w":  7,
+        "atlasY":  36,
+        "atlasX":  256,
+        "name":  "Tho Than Cut Tail",
+        "type":  "consonant_cut_tail",
+        "gid":  342,
+        "h":  9,
+        "code":  3697
+    },
+    {
+        "w":  11,
+        "atlasY":  36,
+        "atlasX":  265,
+        "name":  "Yo Ying Cut Tail",
+        "type":  "consonant_cut_tail",
+        "gid":  357,
+        "h":  9,
+        "code":  3698
+    },
+    {
+        "w":  4,
+        "atlasY":  36,
+        "atlasX":  278,
+        "name":  "Sara U Short",
+        "type":  "lower_vowel_short",
+        "gid":  366,
+        "h":  4,
+        "code":  3699
+    },
+    {
+        "w":  6,
+        "atlasY":  36,
+        "atlasX":  284,
+        "name":  "Sara Uu Short",
+        "type":  "lower_vowel_short",
+        "gid":  367,
+        "h":  4,
+        "code":  3700
+    },
+    {
+        "w":  3,
+        "atlasY":  36,
+        "atlasX":  292,
+        "name":  "Phinthu Short",
+        "type":  "lower_vowel_short",
+        "gid":  368,
+        "h":  1,
+        "code":  3701
+    },
+    {
+        "w":  2,
+        "atlasY":  36,
+        "atlasX":  297,
+        "name":  "Mai Ek High Shifted",
+        "type":  "tone_high_shifted",
+        "gid":  361,
+        "h":  3,
+        "code":  3702
+    },
+    {
+        "w":  6,
+        "atlasY":  36,
+        "atlasX":  301,
+        "name":  "Mai Tho High Shifted",
+        "type":  "tone_high_shifted",
+        "gid":  362,
+        "h":  4,
+        "code":  3703
+    },
+    {
+        "w":  7,
+        "atlasY":  36,
+        "atlasX":  309,
+        "name":  "Mai Tri High Shifted",
+        "type":  "tone_high_shifted",
+        "gid":  363,
+        "h":  4,
+        "code":  3704
+    },
+    {
+        "w":  4,
+        "atlasY":  36,
+        "atlasX":  318,
+        "name":  "Mai Chattawa High Shifted",
+        "type":  "tone_high_shifted",
+        "gid":  364,
+        "h":  3,
+        "code":  3705
+    },
+    {
+        "w":  5,
+        "atlasY":  36,
+        "atlasX":  324,
+        "name":  "Thanthakhat High Shifted",
+        "type":  "tone_high_shifted",
+        "gid":  365,
+        "h":  4,
+        "code":  3706
+    }
+]
