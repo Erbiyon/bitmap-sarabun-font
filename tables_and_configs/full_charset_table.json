@@ -1,0 +1,1580 @@
+[
+  {
+    "code": 32,
+    "char": " ",
+    "name": "Space",
+    "type": "space"
+  },
+  {
+    "code": 33,
+    "char": "!",
+    "name": "!",
+    "type": "symbol"
+  },
+  {
+    "code": 34,
+    "char": "\"",
+    "name": "\"",
+    "type": "symbol"
+  },
+  {
+    "code": 35,
+    "char": "#",
+    "name": "#",
+    "type": "symbol"
+  },
+  {
+    "code": 36,
+    "char": "$",
+    "name": "$",
+    "type": "symbol"
+  },
+  {
+    "code": 37,
+    "char": "%",
+    "name": "%",
+    "type": "symbol"
+  },
+  {
+    "code": 38,
+    "char": "&",
+    "name": "&",
+    "type": "symbol"
+  },
+  {
+    "code": 39,
+    "char": "'",
+    "name": "'",
+    "type": "symbol"
+  },
+  {
+    "code": 40,
+    "char": "(",
+    "name": "(",
+    "type": "symbol"
+  },
+  {
+    "code": 41,
+    "char": ")",
+    "name": ")",
+    "type": "symbol"
+  },
+  {
+    "code": 42,
+    "char": "*",
+    "name": "*",
+    "type": "symbol"
+  },
+  {
+    "code": 43,
+    "char": "+",
+    "name": "+",
+    "type": "symbol"
+  },
+  {
+    "code": 44,
+    "char": ",",
+    "name": ",",
+    "type": "symbol"
+  },
+  {
+    "code": 45,
+    "char": "-",
+    "name": "-",
+    "type": "symbol"
+  },
+  {
+    "code": 46,
+    "char": ".",
+    "name": ".",
+    "type": "symbol"
+  },
+  {
+    "code": 47,
+    "char": "/",
+    "name": "/",
+    "type": "symbol"
+  },
+  {
+    "code": 48,
+    "char": "0",
+    "name": "0",
+    "type": "digit"
+  },
+  {
+    "code": 49,
+    "char": "1",
+    "name": "1",
+    "type": "digit"
+  },
+  {
+    "code": 50,
+    "char": "2",
+    "name": "2",
+    "type": "digit"
+  },
+  {
+    "code": 51,
+    "char": "3",
+    "name": "3",
+    "type": "digit"
+  },
+  {
+    "code": 52,
+    "char": "4",
+    "name": "4",
+    "type": "digit"
+  },
+  {
+    "code": 53,
+    "char": "5",
+    "name": "5",
+    "type": "digit"
+  },
+  {
+    "code": 54,
+    "char": "6",
+    "name": "6",
+    "type": "digit"
+  },
+  {
+    "code": 55,
+    "char": "7",
+    "name": "7",
+    "type": "digit"
+  },
+  {
+    "code": 56,
+    "char": "8",
+    "name": "8",
+    "type": "digit"
+  },
+  {
+    "code": 57,
+    "char": "9",
+    "name": "9",
+    "type": "digit"
+  },
+  {
+    "code": 58,
+    "char": ":",
+    "name": ":",
+    "type": "symbol"
+  },
+  {
+    "code": 59,
+    "char": ";",
+    "name": ";",
+    "type": "symbol"
+  },
+  {
+    "code": 60,
+    "char": "<",
+    "name": "<",
+    "type": "symbol"
+  },
+  {
+    "code": 61,
+    "char": "=",
+    "name": "=",
+    "type": "symbol"
+  },
+  {
+    "code": 62,
+    "char": ">",
+    "name": ">",
+    "type": "symbol"
+  },
+  {
+    "code": 63,
+    "char": "?",
+    "name": "?",
+    "type": "symbol"
+  },
+  {
+    "code": 64,
+    "char": "@",
+    "name": "@",
+    "type": "symbol"
+  },
+  {
+    "code": 65,
+    "char": "A",
+    "name": "A",
+    "type": "latin_upper"
+  },
+  {
+    "code": 66,
+    "char": "B",
+    "name": "B",
+    "type": "latin_upper"
+  },
+  {
+    "code": 67,
+    "char": "C",
+    "name": "C",
+    "type": "latin_upper"
+  },
+  {
+    "code": 68,
+    "char": "D",
+    "name": "D",
+    "type": "latin_upper"
+  },
+  {
+    "code": 69,
+    "char": "E",
+    "name": "E",
+    "type": "latin_upper"
+  },
+  {
+    "code": 70,
+    "char": "F",
+    "name": "F",
+    "type": "latin_upper"
+  },
+  {
+    "code": 71,
+    "char": "G",
+    "name": "G",
+    "type": "latin_upper"
+  },
+  {
+    "code": 72,
+    "char": "H",
+    "name": "H",
+    "type": "latin_upper"
+  },
+  {
+    "code": 73,
+    "char": "I",
+    "name": "I",
+    "type": "latin_upper"
+  },
+  {
+    "code": 74,
+    "char": "J",
+    "name": "J",
+    "type": "latin_upper"
+  },
+  {
+    "code": 75,
+    "char": "K",
+    "name": "K",
+    "type": "latin_upper"
+  },
+  {
+    "code": 76,
+    "char": "L",
+    "name": "L",
+    "type": "latin_upper"
+  },
+  {
+    "code": 77,
+    "char": "M",
+    "name": "M",
+    "type": "latin_upper"
+  },
+  {
+    "code": 78,
+    "char": "N",
+    "name": "N",
+    "type": "latin_upper"
+  },
+  {
+    "code": 79,
+    "char": "O",
+    "name": "O",
+    "type": "latin_upper"
+  },
+  {
+    "code": 80,
+    "char": "P",
+    "name": "P",
+    "type": "latin_upper"
+  },
+  {
+    "code": 81,
+    "char": "Q",
+    "name": "Q",
+    "type": "latin_upper"
+  },
+  {
+    "code": 82,
+    "char": "R",
+    "name": "R",
+    "type": "latin_upper"
+  },
+  {
+    "code": 83,
+    "char": "S",
+    "name": "S",
+    "type": "latin_upper"
+  },
+  {
+    "code": 84,
+    "char": "T",
+    "name": "T",
+    "type": "latin_upper"
+  },
+  {
+    "code": 85,
+    "char": "U",
+    "name": "U",
+    "type": "latin_upper"
+  },
+  {
+    "code": 86,
+    "char": "V",
+    "name": "V",
+    "type": "latin_upper"
+  },
+  {
+    "code": 87,
+    "char": "W",
+    "name": "W",
+    "type": "latin_upper"
+  },
+  {
+    "code": 88,
+    "char": "X",
+    "name": "X",
+    "type": "latin_upper"
+  },
+  {
+    "code": 89,
+    "char": "Y",
+    "name": "Y",
+    "type": "latin_upper"
+  },
+  {
+    "code": 90,
+    "char": "Z",
+    "name": "Z",
+    "type": "latin_upper"
+  },
+  {
+    "code": 91,
+    "char": "[",
+    "name": "[",
+    "type": "symbol"
+  },
+  {
+    "code": 92,
+    "char": "\\",
+    "name": "\\",
+    "type": "symbol"
+  },
+  {
+    "code": 93,
+    "char": "]",
+    "name": "]",
+    "type": "symbol"
+  },
+  {
+    "code": 94,
+    "char": "^",
+    "name": "^",
+    "type": "symbol"
+  },
+  {
+    "code": 95,
+    "char": "_",
+    "name": "_",
+    "type": "symbol"
+  },
+  {
+    "code": 96,
+    "char": "`",
+    "name": "`",
+    "type": "symbol"
+  },
+  {
+    "code": 97,
+    "char": "a",
+    "name": "a",
+    "type": "latin_lower"
+  },
+  {
+    "code": 98,
+    "char": "b",
+    "name": "b",
+    "type": "latin_lower"
+  },
+  {
+    "code": 99,
+    "char": "c",
+    "name": "c",
+    "type": "latin_lower"
+  },
+  {
+    "code": 100,
+    "char": "d",
+    "name": "d",
+    "type": "latin_lower"
+  },
+  {
+    "code": 101,
+    "char": "e",
+    "name": "e",
+    "type": "latin_lower"
+  },
+  {
+    "code": 102,
+    "char": "f",
+    "name": "f",
+    "type": "latin_lower"
+  },
+  {
+    "code": 103,
+    "char": "g",
+    "name": "g",
+    "type": "latin_lower"
+  },
+  {
+    "code": 104,
+    "char": "h",
+    "name": "h",
+    "type": "latin_lower"
+  },
+  {
+    "code": 105,
+    "char": "i",
+    "name": "i",
+    "type": "latin_lower"
+  },
+  {
+    "code": 106,
+    "char": "j",
+    "name": "j",
+    "type": "latin_lower"
+  },
+  {
+    "code": 107,
+    "char": "k",
+    "name": "k",
+    "type": "latin_lower"
+  },
+  {
+    "code": 108,
+    "char": "l",
+    "name": "l",
+    "type": "latin_lower"
+  },
+  {
+    "code": 109,
+    "char": "m",
+    "name": "m",
+    "type": "latin_lower"
+  },
+  {
+    "code": 110,
+    "char": "n",
+    "name": "n",
+    "type": "latin_lower"
+  },
+  {
+    "code": 111,
+    "char": "o",
+    "name": "o",
+    "type": "latin_lower"
+  },
+  {
+    "code": 112,
+    "char": "p",
+    "name": "p",
+    "type": "latin_lower"
+  },
+  {
+    "code": 113,
+    "char": "q",
+    "name": "q",
+    "type": "latin_lower"
+  },
+  {
+    "code": 114,
+    "char": "r",
+    "name": "r",
+    "type": "latin_lower"
+  },
+  {
+    "code": 115,
+    "char": "s",
+    "name": "s",
+    "type": "latin_lower"
+  },
+  {
+    "code": 116,
+    "char": "t",
+    "name": "t",
+    "type": "latin_lower"
+  },
+  {
+    "code": 117,
+    "char": "u",
+    "name": "u",
+    "type": "latin_lower"
+  },
+  {
+    "code": 118,
+    "char": "v",
+    "name": "v",
+    "type": "latin_lower"
+  },
+  {
+    "code": 119,
+    "char": "w",
+    "name": "w",
+    "type": "latin_lower"
+  },
+  {
+    "code": 120,
+    "char": "x",
+    "name": "x",
+    "type": "latin_lower"
+  },
+  {
+    "code": 121,
+    "char": "y",
+    "name": "y",
+    "type": "latin_lower"
+  },
+  {
+    "code": 122,
+    "char": "z",
+    "name": "z",
+    "type": "latin_lower"
+  },
+  {
+    "code": 123,
+    "char": "{",
+    "name": "{",
+    "type": "symbol"
+  },
+  {
+    "code": 124,
+    "char": "|",
+    "name": "|",
+    "type": "symbol"
+  },
+  {
+    "code": 125,
+    "char": "}",
+    "name": "}",
+    "type": "symbol"
+  },
+  {
+    "code": 126,
+    "char": "~",
+    "name": "~",
+    "type": "symbol"
+  },
+  {
+    "code": 160,
+    "char": " ",
+    "name": "No-Break Space",
+    "type": "space"
+  },
+  {
+    "code": 169,
+    "char": "©",
+    "name": "Copyright",
+    "type": "symbol"
+  },
+  {
+    "code": 174,
+    "char": "®",
+    "name": "Registered",
+    "type": "symbol"
+  },
+  {
+    "code": 8482,
+    "char": "™",
+    "name": "Trademark",
+    "type": "symbol"
+  },
+  {
+    "code": 176,
+    "char": "°",
+    "name": "Degree",
+    "type": "symbol"
+  },
+  {
+    "code": 177,
+    "char": "±",
+    "name": "Plus-Minus",
+    "type": "symbol"
+  },
+  {
+    "code": 215,
+    "char": "×",
+    "name": "Multiply",
+    "type": "symbol"
+  },
+  {
+    "code": 247,
+    "char": "÷",
+    "name": "Divide",
+    "type": "symbol"
+  },
+  {
+    "code": 171,
+    "char": "«",
+    "name": "Left Guillemet",
+    "type": "punctuation"
+  },
+  {
+    "code": 187,
+    "char": "»",
+    "name": "Right Guillemet",
+    "type": "punctuation"
+  },
+  {
+    "code": 8211,
+    "char": "–",
+    "name": "En Dash",
+    "type": "punctuation"
+  },
+  {
+    "code": 8212,
+    "char": "—",
+    "name": "Em Dash",
+    "type": "punctuation"
+  },
+  {
+    "code": 8216,
+    "char": "‘",
+    "name": "Left Single Quote",
+    "type": "punctuation"
+  },
+  {
+    "code": 8217,
+    "char": "’",
+    "name": "Right Single Quote",
+    "type": "punctuation"
+  },
+  {
+    "code": 8220,
+    "char": "“",
+    "name": "Left Double Quote",
+    "type": "punctuation"
+  },
+  {
+    "code": 8221,
+    "char": "”",
+    "name": "Right Double Quote",
+    "type": "punctuation"
+  },
+  {
+    "code": 8226,
+    "char": "•",
+    "name": "Bullet",
+    "type": "symbol"
+  },
+  {
+    "code": 8230,
+    "char": "…",
+    "name": "Ellipsis",
+    "type": "punctuation"
+  },
+  {
+    "code": 3585,
+    "gid": 214,
+    "char": "ก",
+    "type": "consonant"
+  },
+  {
+    "code": 3586,
+    "gid": 215,
+    "char": "ข",
+    "type": "consonant"
+  },
+  {
+    "code": 3587,
+    "gid": 216,
+    "char": "ฃ",
+    "type": "consonant"
+  },
+  {
+    "code": 3588,
+    "gid": 217,
+    "char": "ค",
+    "type": "consonant"
+  },
+  {
+    "code": 3589,
+    "gid": 218,
+    "char": "ฅ",
+    "type": "consonant"
+  },
+  {
+    "code": 3590,
+    "gid": 219,
+    "char": "ฆ",
+    "type": "consonant"
+  },
+  {
+    "code": 3591,
+    "gid": 220,
+    "char": "ง",
+    "type": "consonant"
+  },
+  {
+    "code": 3592,
+    "gid": 221,
+    "char": "จ",
+    "type": "consonant"
+  },
+  {
+    "code": 3593,
+    "gid": 222,
+    "char": "ฉ",
+    "type": "consonant"
+  },
+  {
+    "code": 3594,
+    "gid": 223,
+    "char": "ช",
+    "type": "consonant"
+  },
+  {
+    "code": 3595,
+    "gid": 224,
+    "char": "ซ",
+    "type": "consonant"
+  },
+  {
+    "code": 3596,
+    "gid": 225,
+    "char": "ฌ",
+    "type": "consonant"
+  },
+  {
+    "code": 3597,
+    "gid": 226,
+    "char": "ญ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3598,
+    "gid": 227,
+    "char": "ฎ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3599,
+    "gid": 228,
+    "char": "ฏ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3600,
+    "gid": 229,
+    "char": "ฐ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3601,
+    "gid": 230,
+    "char": "ฑ",
+    "type": "consonant"
+  },
+  {
+    "code": 3602,
+    "gid": 231,
+    "char": "ฒ",
+    "type": "consonant"
+  },
+  {
+    "code": 3603,
+    "gid": 232,
+    "char": "ณ",
+    "type": "consonant"
+  },
+  {
+    "code": 3604,
+    "gid": 233,
+    "char": "ด",
+    "type": "consonant"
+  },
+  {
+    "code": 3605,
+    "gid": 234,
+    "char": "ต",
+    "type": "consonant"
+  },
+  {
+    "code": 3606,
+    "gid": 235,
+    "char": "ถ",
+    "type": "consonant"
+  },
+  {
+    "code": 3607,
+    "gid": 236,
+    "char": "ท",
+    "type": "consonant"
+  },
+  {
+    "code": 3608,
+    "gid": 237,
+    "char": "ธ",
+    "type": "consonant"
+  },
+  {
+    "code": 3609,
+    "gid": 238,
+    "char": "น",
+    "type": "consonant"
+  },
+  {
+    "code": 3610,
+    "gid": 239,
+    "char": "บ",
+    "type": "consonant"
+  },
+  {
+    "code": 3611,
+    "gid": 240,
+    "char": "ป",
+    "type": "consonant"
+  },
+  {
+    "code": 3612,
+    "gid": 241,
+    "char": "ผ",
+    "type": "consonant"
+  },
+  {
+    "code": 3613,
+    "gid": 242,
+    "char": "ฝ",
+    "type": "consonant"
+  },
+  {
+    "code": 3614,
+    "gid": 243,
+    "char": "พ",
+    "type": "consonant"
+  },
+  {
+    "code": 3615,
+    "gid": 244,
+    "char": "ฟ",
+    "type": "consonant"
+  },
+  {
+    "code": 3616,
+    "gid": 245,
+    "char": "ภ",
+    "type": "consonant"
+  },
+  {
+    "code": 3617,
+    "gid": 246,
+    "char": "ม",
+    "type": "consonant"
+  },
+  {
+    "code": 3618,
+    "gid": 247,
+    "char": "ย",
+    "type": "consonant"
+  },
+  {
+    "code": 3619,
+    "gid": 248,
+    "char": "ร",
+    "type": "consonant"
+  },
+  {
+    "code": 3620,
+    "gid": 249,
+    "char": "ฤ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3621,
+    "gid": 250,
+    "char": "ล",
+    "type": "consonant"
+  },
+  {
+    "code": 3622,
+    "gid": 251,
+    "char": "ฦ",
+    "type": "consonant_descender"
+  },
+  {
+    "code": 3623,
+    "gid": 252,
+    "char": "ว",
+    "type": "consonant"
+  },
+  {
+    "code": 3624,
+    "gid": 253,
+    "char": "ศ",
+    "type": "consonant"
+  },
+  {
+    "code": 3625,
+    "gid": 254,
+    "char": "ษ",
+    "type": "consonant"
+  },
+  {
+    "code": 3626,
+    "gid": 255,
+    "char": "ส",
+    "type": "consonant"
+  },
+  {
+    "code": 3627,
+    "gid": 256,
+    "char": "ห",
+    "type": "consonant"
+  },
+  {
+    "code": 3628,
+    "gid": 257,
+    "char": "ฬ",
+    "type": "consonant"
+  },
+  {
+    "code": 3629,
+    "gid": 258,
+    "char": "อ",
+    "type": "consonant"
+  },
+  {
+    "code": 3630,
+    "gid": 259,
+    "char": "ฮ",
+    "type": "consonant"
+  },
+  {
+    "code": 3631,
+    "gid": 260,
+    "char": "ฯ",
+    "type": "normal"
+  },
+  {
+    "code": 3632,
+    "gid": 261,
+    "char": "ะ",
+    "type": "normal"
+  },
+  {
+    "code": 3633,
+    "gid": 262,
+    "char": "ั",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3634,
+    "gid": 263,
+    "char": "า",
+    "type": "normal"
+  },
+  {
+    "code": 3635,
+    "gid": 264,
+    "char": "ำ",
+    "type": "normal"
+  },
+  {
+    "code": 3636,
+    "gid": 265,
+    "char": "ิ",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3637,
+    "gid": 266,
+    "char": "ี",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3638,
+    "gid": 267,
+    "char": "ึ",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3639,
+    "gid": 268,
+    "char": "ื",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3640,
+    "gid": 269,
+    "char": "ุ",
+    "type": "lower_vowel"
+  },
+  {
+    "code": 3641,
+    "gid": 270,
+    "char": "ู",
+    "type": "lower_vowel"
+  },
+  {
+    "code": 3642,
+    "gid": 271,
+    "char": "ฺ",
+    "type": "lower_vowel"
+  },
+  {
+    "code": 3647,
+    "gid": 272,
+    "char": "฿",
+    "type": "normal"
+  },
+  {
+    "code": 3648,
+    "gid": 273,
+    "char": "เ",
+    "type": "normal"
+  },
+  {
+    "code": 3649,
+    "gid": 274,
+    "char": "แ",
+    "type": "normal"
+  },
+  {
+    "code": 3650,
+    "gid": 275,
+    "char": "โ",
+    "type": "normal"
+  },
+  {
+    "code": 3651,
+    "gid": 276,
+    "char": "ใ",
+    "type": "normal"
+  },
+  {
+    "code": 3652,
+    "gid": 277,
+    "char": "ไ",
+    "type": "normal"
+  },
+  {
+    "code": 3653,
+    "gid": 278,
+    "char": "ๅ",
+    "type": "normal"
+  },
+  {
+    "code": 3654,
+    "gid": 279,
+    "char": "ๆ",
+    "type": "normal"
+  },
+  {
+    "code": 3655,
+    "gid": 280,
+    "char": "็",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3656,
+    "gid": 281,
+    "char": "่",
+    "type": "tone_mark"
+  },
+  {
+    "code": 3657,
+    "gid": 282,
+    "char": "้",
+    "type": "tone_mark"
+  },
+  {
+    "code": 3658,
+    "gid": 283,
+    "char": "๊",
+    "type": "tone_mark"
+  },
+  {
+    "code": 3659,
+    "gid": 284,
+    "char": "๋",
+    "type": "tone_mark"
+  },
+  {
+    "code": 3660,
+    "gid": 285,
+    "char": "์",
+    "type": "tone_mark"
+  },
+  {
+    "code": 3661,
+    "gid": 286,
+    "char": "ํ",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3662,
+    "gid": 287,
+    "char": "๎",
+    "type": "upper_vowel"
+  },
+  {
+    "code": 3663,
+    "gid": 288,
+    "char": "๏",
+    "type": "normal"
+  },
+  {
+    "code": 3664,
+    "gid": 289,
+    "char": "๐",
+    "type": "normal"
+  },
+  {
+    "code": 3665,
+    "gid": 290,
+    "char": "๑",
+    "type": "normal"
+  },
+  {
+    "code": 3666,
+    "gid": 291,
+    "char": "๒",
+    "type": "normal"
+  },
+  {
+    "code": 3667,
+    "gid": 292,
+    "char": "๓",
+    "type": "normal"
+  },
+  {
+    "code": 3668,
+    "gid": 293,
+    "char": "๔",
+    "type": "normal"
+  },
+  {
+    "code": 3669,
+    "gid": 294,
+    "char": "๕",
+    "type": "normal"
+  },
+  {
+    "code": 3670,
+    "gid": 295,
+    "char": "๖",
+    "type": "normal"
+  },
+  {
+    "code": 3671,
+    "gid": 296,
+    "char": "๗",
+    "type": "normal"
+  },
+  {
+    "code": 3672,
+    "gid": 297,
+    "char": "๘",
+    "type": "normal"
+  },
+  {
+    "code": 3673,
+    "gid": 298,
+    "char": "๙",
+    "type": "normal"
+  },
+  {
+    "code": 3674,
+    "gid": 299,
+    "char": "๚",
+    "type": "normal"
+  },
+  {
+    "code": 3675,
+    "gid": 300,
+    "char": "๛",
+    "type": "normal"
+  },
+  {
+    "code": 3680,
+    "gid": 361,
+    "char": "่",
+    "name": "Mai Ek High",
+    "type": "tone_high"
+  },
+  {
+    "code": 3681,
+    "gid": 362,
+    "char": "้",
+    "name": "Mai Tho High",
+    "type": "tone_high"
+  },
+  {
+    "code": 3682,
+    "gid": 363,
+    "char": "๊",
+    "name": "Mai Tri High",
+    "type": "tone_high"
+  },
+  {
+    "code": 3683,
+    "gid": 364,
+    "char": "๋",
+    "name": "Mai Chattawa High",
+    "type": "tone_high"
+  },
+  {
+    "code": 3684,
+    "gid": 365,
+    "char": "์",
+    "name": "Thanthakhat High",
+    "type": "tone_high"
+  },
+  {
+    "code": 3685,
+    "gid": 347,
+    "char": "่",
+    "name": "Mai Ek Shifted",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 3686,
+    "gid": 348,
+    "char": "้",
+    "name": "Mai Tho Shifted",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 3687,
+    "gid": 349,
+    "char": "๊",
+    "name": "Mai Tri Shifted",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 3688,
+    "gid": 350,
+    "char": "๋",
+    "name": "Mai Chattawa Shifted",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 3689,
+    "gid": 351,
+    "char": "์",
+    "name": "Thanthakhat Shifted",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 3690,
+    "gid": 262,
+    "char": "ั",
+    "name": "Mai Han-Akat Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 3691,
+    "gid": 265,
+    "char": "ิ",
+    "name": "Sara I Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 3692,
+    "gid": 266,
+    "char": "ี",
+    "name": "Sara Ii Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 3693,
+    "gid": 267,
+    "char": "ึ",
+    "name": "Sara Ue Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 3694,
+    "gid": 268,
+    "char": "ื",
+    "name": "Sara Uee Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 3695,
+    "gid": 280,
+    "char": "็",
+    "name": "Maitaikhu Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 3696,
+    "gid": 286,
+    "char": "ํ",
+    "name": "Nikhahit Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 3697,
+    "gid": 342,
+    "char": "ฐ",
+    "name": "Tho Than Cut Tail",
+    "type": "consonant_cut_tail"
+  },
+  {
+    "code": 3698,
+    "gid": 357,
+    "char": "ญ",
+    "name": "Yo Ying Cut Tail",
+    "type": "consonant_cut_tail"
+  },
+  {
+    "code": 3699,
+    "gid": 366,
+    "char": "ุ",
+    "name": "Sara U Short",
+    "type": "lower_vowel_short"
+  },
+  {
+    "code": 3700,
+    "gid": 367,
+    "char": "ู",
+    "name": "Sara Uu Short",
+    "type": "lower_vowel_short"
+  },
+  {
+    "code": 3701,
+    "gid": 368,
+    "char": "ฺ",
+    "name": "Phinthu Short",
+    "type": "lower_vowel_short"
+  },
+  {
+    "code": 3702,
+    "gid": 361,
+    "char": "่",
+    "name": "Mai Ek High Shifted",
+    "type": "tone_high_shifted"
+  },
+  {
+    "code": 3703,
+    "gid": 362,
+    "char": "้",
+    "name": "Mai Tho High Shifted",
+    "type": "tone_high_shifted"
+  },
+  {
+    "code": 3704,
+    "gid": 363,
+    "char": "๊",
+    "name": "Mai Tri High Shifted",
+    "type": "tone_high_shifted"
+  },
+  {
+    "code": 3705,
+    "gid": 364,
+    "char": "๋",
+    "name": "Mai Chattawa High Shifted",
+    "type": "tone_high_shifted"
+  },
+  {
+    "code": 3706,
+    "gid": 365,
+    "char": "์",
+    "name": "Thanthakhat High Shifted",
+    "type": "tone_high_shifted"
+  },
+  {
+    "code": 63232,
+    "gid": 361,
+    "char": "",
+    "name": "Mai Ek High",
+    "type": "tone_high"
+  },
+  {
+    "code": 63233,
+    "gid": 362,
+    "char": "",
+    "name": "Mai Tho High",
+    "type": "tone_high"
+  },
+  {
+    "code": 63234,
+    "gid": 363,
+    "char": "",
+    "name": "Mai Tri High",
+    "type": "tone_high"
+  },
+  {
+    "code": 63235,
+    "gid": 364,
+    "char": "",
+    "name": "Mai Chattawa High",
+    "type": "tone_high"
+  },
+  {
+    "code": 63236,
+    "gid": 365,
+    "char": "",
+    "name": "Thanthakhat High",
+    "type": "tone_high"
+  },
+  {
+    "code": 63237,
+    "gid": 347,
+    "char": "",
+    "name": "Mai Ek Shifted",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 63238,
+    "gid": 348,
+    "char": "",
+    "name": "Mai Tho Shifted",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 63239,
+    "gid": 349,
+    "char": "",
+    "name": "Mai Tri Shifted",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 63240,
+    "gid": 350,
+    "char": "",
+    "name": "Mai Chattawa Shifted",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 63241,
+    "gid": 351,
+    "char": "",
+    "name": "Thanthakhat Shifted",
+    "type": "tone_shifted"
+  },
+  {
+    "code": 63242,
+    "gid": 361,
+    "char": "",
+    "name": "Mai Ek High Shifted",
+    "type": "tone_high_shifted"
+  },
+  {
+    "code": 63243,
+    "gid": 362,
+    "char": "",
+    "name": "Mai Tho High Shifted",
+    "type": "tone_high_shifted"
+  },
+  {
+    "code": 63244,
+    "gid": 363,
+    "char": "",
+    "name": "Mai Tri High Shifted",
+    "type": "tone_high_shifted"
+  },
+  {
+    "code": 63245,
+    "gid": 364,
+    "char": "",
+    "name": "Mai Chattawa High Shifted",
+    "type": "tone_high_shifted"
+  },
+  {
+    "code": 63246,
+    "gid": 365,
+    "char": "",
+    "name": "Thanthakhat High Shifted",
+    "type": "tone_high_shifted"
+  },
+  {
+    "code": 63247,
+    "gid": 357,
+    "char": "",
+    "name": "Yo Ying Cut Tail",
+    "type": "consonant_cut_tail"
+  },
+  {
+    "code": 63248,
+    "gid": 342,
+    "char": "",
+    "name": "Tho Than Cut Tail",
+    "type": "consonant_cut_tail"
+  },
+  {
+    "code": 63249,
+    "gid": 366,
+    "char": "",
+    "name": "Sara U Short",
+    "type": "lower_vowel_short"
+  },
+  {
+    "code": 63250,
+    "gid": 367,
+    "char": "",
+    "name": "Sara Uu Short",
+    "type": "lower_vowel_short"
+  },
+  {
+    "code": 63251,
+    "gid": 368,
+    "char": "",
+    "name": "Phinthu Short",
+    "type": "lower_vowel_short"
+  },
+  {
+    "code": 63252,
+    "gid": 262,
+    "char": "",
+    "name": "Mai Han-Akat Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63253,
+    "gid": 265,
+    "char": "",
+    "name": "Sara I Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63254,
+    "gid": 266,
+    "char": "",
+    "name": "Sara Ii Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63255,
+    "gid": 267,
+    "char": "",
+    "name": "Sara Ue Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63256,
+    "gid": 268,
+    "char": "",
+    "name": "Sara Uee Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63257,
+    "gid": 280,
+    "char": "",
+    "name": "Maitaikhu Shifted",
+    "type": "upper_vowel_shifted"
+  },
+  {
+    "code": 63258,
+    "gid": 286,
+    "char": "",
+    "name": "Nikhahit Shifted",
+    "type": "upper_vowel_shifted"
+  }
+]

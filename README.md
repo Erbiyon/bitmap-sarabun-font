@@ -20,12 +20,13 @@
 
 ```text
 sarabun_bitmap_fonts/
-├── docs/                      # เอกสารและรูปภาพประกอบ (Images & Showcases)
-├── game_ready_fontbin/        # ไฟล์ Fontbin สำเร็จรูปที่พร้อมใช้งานในเกมทันที (.fbin + .png)
-├── rendered_glyphs/           # Texture Sheet ตัวอักษรไทยที่เรนเดอร์จากฟอนต์ Sarabun พร้อม Metadata
+├── standalone_full_fonts/     # ชุด Bitmap Font เต็มรูปแบบ (อังกฤษ + เลข + สัญลักษณ์ + ไทย 100% ไม่ใช้ไฟล์เกม)
+├── game_ready_fontbin/        # ไฟล์ Fontbin สำเร็จรูปสำหรับใส่เกม LOTD (.fbin + .png)
+├── rendered_glyphs/           # Texture Sheet ตัวอักษรไทยล้วนที่เรนเดอร์จากฟอนต์ Sarabun พร้อม Metadata
 ├── ttf_sources/               # ไฟล์ฟอนต์ต้นฉบับ TrueType (.ttf)
 ├── tables_and_configs/        # ตารางแมปปิ้งตัวอักษร Unicode, PUA และการตั้งค่าขนาดฟอนต์
 ├── tools/                     # สคริปต์สำหรับเรนเดอร์และแพตช์ไฟล์ฟอนต์ทั้งหมด
+├── docs/                      # ภาพตัวอย่างและเอกสารประกอบ (Images & Showcases)
 └── README.md                  # เอกสารอธิบายการใช้งานชุดฟอนต์นี้
 ```
 
@@ -33,7 +34,29 @@ sarabun_bitmap_fonts/
 
 ## 2. รายละเอียดของแต่ละโฟลเดอร์
 
-### 📁 `game_ready_fontbin/` (ไฟล์พร้อมใช้ในเกม)
+### 📁 `standalone_full_fonts/` (ฟอนต์อิสระเต็มรูปแบบ 100% ไม่ใช้ไฟล์ของเกม)
+รวบรวมชุด Bitmap Font ที่เรนเดอร์จากฟอนต์ **TH Sarabun New** โดยตรง 100% ครบทุกอักขระ (254 อักขระ: ภาษาอังกฤษ A-Z, a-z, เลขอารบิก 0-9, เลขไทย ๐-๙, สัญลักษณ์สากลทางคณิตศาสตร์และวรรคตอน และภาษาไทยครบทุกตัวพร้อมระบบ PUA หลบสระ) โดย**ไม่มีส่วนประกอบใดๆ ของเกม Yu-Gi-Oh!**:
+
+<p align="center">
+  <img src="docs/images/standalone_showcase.png" alt="Standalone Full Font Showcase" width="750" />
+  <br><em>ภาพตัวอย่าง: ฟอนต์ TH Sarabun New ฉบับ Standalone แสดงผลภาษาอังกฤษ, ตัวเลข, สัญลักษณ์ และภาษาไทยพร้อมสระหลบครบวงจร</em>
+</p>
+
+* **ไฟล์ที่มีให้ใช้งาน (6 แบบมาตรฐาน):**
+  * `sarabun_regular_24px.{png, fnt, json}`: สำหรับข้อความทั่วไปขนาดเล็ก
+  * `sarabun_regular_32px.{png, fnt, json}`: สำหรับเนื้อเรื่อง ซับไตเติล และ UI ทั่วไป
+  * `sarabun_regular_48px.{png, fnt, json}`: สำหรับจอความละเอียดสูง (Hi-DPI)
+  * `sarabun_bold_24px.{png, fnt, json}`: ตัวหนาขนาดเล็ก
+  * `sarabun_bold_32px.{png, fnt, json}`: ตัวหนาขนาดกลาง สำหรับชื่อเมนูและหัวข้อ
+  * `sarabun_bold_48px.{png, fnt, json}`: ตัวหนาขนาดใหญ่ สำหรับชื่อการ์ดและประกาศสำคัญ
+* **รูปแบบไฟล์ที่รองรับ:**
+  * `.fnt`: มาตรฐาน **AngelCode BMFont** สากล สามารถนำไปลากใส่ Unity (TextMeshPro / NGUI), Godot Engine, Unreal Engine, GameMaker, Cocos2d, MonoGame และ LibGDX ได้ทันที
+  * `.png`: แผ่น Texture Atlas แบบ 32-bit ARGB โปร่งใส ขนาด Power-of-Two (512x512, 1024x1024)
+  * `.json`: ข้อมูลพิกัดและ Metrics ละเอียดสำหรับ Web, Custom Engine หรือภาษา C++/Python/JavaScript
+
+---
+
+### 📁 `game_ready_fontbin/` (ไฟล์พร้อมใช้ในเกม LOTD)
 รวบรวมไฟล์ฟอนต์บิตแมปที่ผ่านการรวม Texture (Composite) และแพตช์ Header/Metrics (.fbin) ครบทั้ง 20+ แบบของเกม:
 * แต่ละฟอนต์จะมีคู่ไฟล์:
   * `[FONT_ID].png`: ภาพ Texture Atlas ที่ขยายขนาดและรวม Glyph ภาษาไทยไว้ด้านขวา
@@ -60,16 +83,18 @@ sarabun_bitmap_fonts/
 * `THSarabunNew Bold.ttf`: ฟอนต์ Sarabun น้ำหนักหนา (Bold) สำหรับหัวข้อ, ชื่อการ์ด, และตัวเลข
 
 ### 📁 `tables_and_configs/` (ตารางข้อมูลและการตั้งค่า)
-* `font_configs.json`: กำหนดขนาด Font Size (px), Cap Height, ความหนา (Bold/Regular) สำหรับฟอนต์แต่ละ ID ของเกม
-* `exact_thai_table.json`: ตารางแมปปิ้งตัวอักษรภาษาไทยทั้งหมด (พยัญชนะ, สระ, วรรณยุกต์, ตัวเลขไทย) รวมถึงรหัส PUA สำหรับระบบหลบวรรณยุกต์
+* `full_charset_table.json`: ตารางอักขระเต็มรูปแบบ 254 ตัว (ASCII อังกฤษ, เลขอารบิก, เครื่องหมายวรรคตอน, สัญลักษณ์คณิตศาสตร์, ภาษาไทย และรหัส PUA มาตรฐาน)
+* `font_configs.json`: กำหนดขนาด Font Size (px), Cap Height, ความหนา (Bold/Regular) สำหรับฟอนต์แต่ละ ID ของเกม LOTD
+* `exact_thai_table.json`: ตารางแมปปิ้งตัวอักษรภาษาไทยและรหัส PUA สำหรับระบบฟอนต์เดิม
 * `thai_glyph_table.json` & `thai_glyphs_meta.json`: ข้อมูลรหัสอักขระและการจัดประเภท
 
 ### 📁 `tools/` (เครื่องมือสร้างและคอมไพล์)
-* `step1_render_sheets.js`: สคริปต์หลักในการสั่งเรนเดอร์ Glyph ภาษาไทยทุกขนาด
-* `render_exact_glyphs.ps1`: สคริปต์ PowerShell สำหรับวาดตัวอักษรลงบนภาพ Bitmap โปร่งใส
-* `batch_composite.ps1`: รวมภาพ Glyph ไทยเข้ากับภาพฟอนต์ภาษาอังกฤษเดิมของเกม
+* `render_full_charset.ps1`: สคริปต์ PowerShell สำหรับเรนเดอร์ Bitmap Font อิสระฉบับเต็ม ออกเป็นแผ่นภาพ Texture Atlas (.png), ไฟล์ BMFont (.fnt) และ Metadata (.json)
+* `build_all_standalone_fonts.js`: สคริปต์ Node.js สั่งสร้างฟอนต์ Standalone ทุกขนาดมาตรฐาน (24px, 32px, 48px ทั้งแบบปกติและตัวหนา) ด้วยคำสั่งเดียว
+* `make_showcase_image.ps1`: สคริปต์วาดภาพแบนเนอร์ตัวอย่างการแสดงผลข้อความจริงจาก Bitmap Font
+* `step1_render_sheets.js` & `render_exact_glyphs.ps1`: สคริปต์สำหรับเรนเดอร์แผ่น Glyph ภาษาไทยของเกม LOTD
+* `batch_composite.ps1`: รวมภาพ Glyph ไทยเข้ากับภาพฟอนต์เดิมของเกม
 * `batch_patch_fbin.js`: อ่านข้อมูล Metadata และแพตช์ไบต์ลงในไฟล์โครงสร้าง `.fbin`
-* `build_thai_sheet.ps1` & `patch_font_bin.js`: สคริปต์ช่วยเหลือและเครื่องมือต้นแบบ
 
 ---
 
