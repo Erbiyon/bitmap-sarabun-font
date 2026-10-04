@@ -1,6 +1,18 @@
 # Sarabun Bitmap Fonts Package (ชุดฟอนต์บิตแมปภาษาไทย Sarabun)
 
-ชุดโฟลเดอร์นี้รวบรวมไฟล์ **Bitmap Font ภาษาไทย (TH Sarabun New)** ที่ถูกสร้างและปรับแต่งเป็นพิเศษสำหรับเกม *Yu-Gi-Oh! Legacy of the Duelist: Link Evolution* โดยแยกเก็บไว้อย่างเป็นสัดส่วนเพื่อความสะดวกในการสำรองข้อมูล นำไปใช้งาน หรือพัฒนาต่อยอด
+ชุดโฟลเดอร์นี้รวบรวมไฟล์ **Bitmap Font ภาษาไทย (TH Sarabun New)** ที่ถูกสร้างและปรับแต่งเป็นพิเศษสำหรับเกม *Yu-Gi-Oh! Legacy of the Duelist: Link Evolution* โดยแยกเก็บไว้อย่างเป็นสัดส่วนเพื่อความสะดวกในการสำรองข้อมูล นำไปใช้งาน หรือนำไปพัฒนาต่อยอดกับเกมอื่นๆ
+
+---
+
+## 📷 ตัวอย่างการแสดงผลภาษาไทย (In-Game / Engine Preview)
+
+<p align="center">
+  <img src="docs/images/preview_thai_rendered.png" alt="ตัวอย่างการแสดงผลภาษาไทยด้วยฟอนต์ Sarabun" width="600" />
+  <br><em>ภาพตัวอย่าง: การแสดงผลข้อความภาษาไทยผ่านระบบ Bitmap Font พร้อมการจัดวางสระและวรรณยุกต์หลบอย่างถูกต้อง (PUA Shaping)</em>
+</p>
+
+> [!TIP]
+> **จุดเด่นสำคัญ:** แสดงผลสระและวรรณยุกต์ซ้อนได้ถูกต้อง 100% (เช่น คำว่า *พื้นที่, ฟื้นฟู, หนึ่ง, ชีวิต, นำไปใช้*) โดยไม่มีปัญหาสระลอยหรือวรรณยุกต์ชนหางพยัญชนะ ด้วยระบบจัดวาง PUA Glyphs อัตโนมัติ
 
 ---
 
@@ -8,12 +20,13 @@
 
 ```text
 sarabun_bitmap_fonts/
-├── game_ready_fontbin/       # ไฟล์ Fontbin สำเร็จรูปที่พร้อมใช้งานในเกมทันที (.fbin + .png)
-├── rendered_glyphs/          # Texture Sheet ตัวอักษรไทยที่เรนเดอร์จากฟอนต์ Sarabun พร้อม Metadata
-├── ttf_sources/              # ไฟล์ฟอนต์ต้นฉบับ TrueType (.ttf)
-├── tables_and_configs/       # ตารางแมปปิ้งตัวอักษร Unicode, PUA และการตั้งค่าขนาดฟอนต์
-├── tools/                    # สคริปต์สำหรับเรนเดอร์และแพตช์ไฟล์ฟอนต์ทั้งหมด
-└── README.md                 # เอกสารอธิบายการใช้งานชุดฟอนต์นี้
+├── docs/                      # เอกสารและรูปภาพประกอบ (Images & Showcases)
+├── game_ready_fontbin/        # ไฟล์ Fontbin สำเร็จรูปที่พร้อมใช้งานในเกมทันที (.fbin + .png)
+├── rendered_glyphs/           # Texture Sheet ตัวอักษรไทยที่เรนเดอร์จากฟอนต์ Sarabun พร้อม Metadata
+├── ttf_sources/               # ไฟล์ฟอนต์ต้นฉบับ TrueType (.ttf)
+├── tables_and_configs/        # ตารางแมปปิ้งตัวอักษร Unicode, PUA และการตั้งค่าขนาดฟอนต์
+├── tools/                     # สคริปต์สำหรับเรนเดอร์และแพตช์ไฟล์ฟอนต์ทั้งหมด
+└── README.md                  # เอกสารอธิบายการใช้งานชุดฟอนต์นี้
 ```
 
 ---
@@ -27,10 +40,20 @@ sarabun_bitmap_fonts/
   * `[FONT_ID].fbin`: ข้อมูลโครงสร้าง Font Binary (GCP Header, UV Coordinates, Kerning, Advance Width)
 * **วิธีใช้งาน:** คัดลอกไฟล์ทั้งหมดในโฟลเดอร์นี้ไปไว้ที่ `mod_staging/fontbin/` แล้วทำการ Repack เข้า `YGO_2020.dat`
 
+<p align="center">
+  <img src="docs/images/composite_atlas_sample.png" alt="Composite Font Atlas Sample" width="280" />
+  <br><em>ตัวอย่าง Texture Atlas สำเร็จรูป (FONT_ID_PD_20.png) รวมตัวอักษรละตินและภาษาไทยเข้าด้วยกัน</em>
+</p>
+
 ### 📁 `rendered_glyphs/` (ไฟล์เรนเดอร์อักขระไทย)
 * `thai_[font_id].png`: แผ่นภาพ Glyph ภาษาไทยที่เรนเดอร์ด้วยความคมชัดสูงจาก TH Sarabun New
 * `thai_[font_id]_meta.json`: ข้อมูลพิกัดของแต่ละตัวอักษร (Bounding Box, Width, Height, Advance, Offsets)
 * `[FONT_ID]_packed_meta.json`: ข้อมูลตำแหน่งการจัดวาง Glyph ลงใน Atlas ของเกม
+
+<p align="center">
+  <img src="docs/images/thai_glyph_sheet_sample.png" alt="Thai Glyph Sheet Sample" width="280" />
+  <br><em>ตัวอย่างแผ่น Glyph ภาษาไทยล้วน (thai_font_id_pd_20.png) พร้อมชุดสระ/วรรณยุกต์หลบ</em>
+</p>
 
 ### 📁 `ttf_sources/` (ฟอนต์ต้นทาง)
 * `THSarabunNew.ttf`: ฟอนต์ Sarabun น้ำหนักปกติ (Regular) สำหรับข้อความยาวและเนื้อเรื่อง
