@@ -150,8 +150,6 @@ if ($outDir -and !(Test-Path $outDir)) {
 }
 
 $banner.Save($OutputPng, [System.Drawing.Imaging.ImageFormat]::Png)
-$secondOutput = [System.IO.Path]::Combine($outDir, "standalone_showcase_2.png")
-$banner.Save($secondOutput, [System.Drawing.Imaging.ImageFormat]::Png)
 $banner.Dispose()
 
-Write-Host "Saved standalone showcase image to $OutputPng and $secondOutput"
+Write-Host "Saved standalone showcase image to $OutputPng"
