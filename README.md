@@ -89,6 +89,7 @@ sarabun_bitmap_fonts/
 * `thai_glyph_table.json` & `thai_glyphs_meta.json`: ข้อมูลรหัสอักขระและการจัดประเภท
 
 ### 📁 `tools/` (เครื่องมือสร้างและคอมไพล์)
+* `thai_shaper.js`: โมดูล Node.js และ CLI สำหรับแปลงข้อความภาษาไทยธรรมดา (Unicode) ให้อยู่ในรูป PUA Glyph อัตโนมัติ (รองรับแยกสระอำ, พยัญชนะหางยาว ป/ฝ/ฟ, ตัดเชิง ญ/ฐ, และสระ/วรรณยุกต์ยกสูง)
 * `render_full_charset.ps1`: สคริปต์ PowerShell สำหรับเรนเดอร์ Bitmap Font อิสระฉบับเต็ม ออกเป็นแผ่นภาพ Texture Atlas (.png), ไฟล์ BMFont (.fnt) และ Metadata (.json)
 * `build_all_standalone_fonts.js`: สคริปต์ Node.js สั่งสร้างฟอนต์ Standalone ทุกขนาดมาตรฐาน (24px, 32px, 48px ทั้งแบบปกติและตัวหนา) ด้วยคำสั่งเดียว
 * `make_showcase_image.ps1`: สคริปต์วาดภาพแบนเนอร์ตัวอย่างการแสดงผลข้อความจริงจาก Bitmap Font

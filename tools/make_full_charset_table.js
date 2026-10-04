@@ -43,64 +43,61 @@ const extraSymbols = [
 // 3. Thai glyph table from exact_thai_table.json
 const thaiTable = JSON.parse(fs.readFileSync('sarabun_bitmap_fonts/tables_and_configs/exact_thai_table.json', 'utf8'));
 
-// 4. Standard Unicode PUA (0xF700 - 0xF71A) mapping to the same GIDs for universal game engine support
-const puaMap = [
-  // 0xF700 - 0xF704: High tone marks
-  { pua: 0xF700, targetCode: 3680, name: 'Mai Ek High' },
-  { pua: 0xF701, targetCode: 3681, name: 'Mai Tho High' },
-  { pua: 0xF702, targetCode: 3682, name: 'Mai Tri High' },
-  { pua: 0xF703, targetCode: 3683, name: 'Mai Chattawa High' },
-  { pua: 0xF704, targetCode: 3684, name: 'Thanthakhat High' },
+// 4. Standard Unicode PUA (0xF700 - 0xF71A) mapped to exact OpenType GSUB GIDs in TH Sarabun New
+const puaList = [
+  // 0xF700 - 0xF704: High tone marks (่ ้ ๊ ๋ ์) - on upper vowels (ที่, ขึ้น, น้ำ)
+  { code: 0xF700, gid: 361, name: 'Mai Ek High', type: 'tone_high' },
+  { code: 0xF701, gid: 362, name: 'Mai Tho High', type: 'tone_high' },
+  { code: 0xF702, gid: 363, name: 'Mai Tri High', type: 'tone_high' },
+  { code: 0xF703, gid: 364, name: 'Mai Chattawa High', type: 'tone_high' },
+  { code: 0xF704, gid: 365, name: 'Thanthakhat High', type: 'tone_high' },
 
-  // 0xF705 - 0xF709: Shifted tone marks
-  { pua: 0xF705, targetCode: 3685, name: 'Mai Ek Shifted' },
-  { pua: 0xF706, targetCode: 3686, name: 'Mai Tho Shifted' },
-  { pua: 0xF707, targetCode: 3687, name: 'Mai Tri Shifted' },
-  { pua: 0xF708, targetCode: 3688, name: 'Mai Chattawa Shifted' },
-  { pua: 0xF709, targetCode: 3689, name: 'Thanthakhat Shifted' },
+  // 0xF705 - 0xF709: Shifted tone marks (่ ้ ๊ ๋ ์) - on tall consonants without upper vowel (ป่า, ปุ๊, ฟุ้ง)
+  { code: 0xF705, gid: 347, name: 'Mai Ek Shifted', type: 'tone_shifted' },
+  { code: 0xF706, gid: 348, name: 'Mai Tho Shifted', type: 'tone_shifted' },
+  { code: 0xF707, gid: 349, name: 'Mai Tri Shifted', type: 'tone_shifted' },
+  { code: 0xF708, gid: 350, name: 'Mai Chattawa Shifted', type: 'tone_shifted' },
+  { code: 0xF709, gid: 351, name: 'Thanthakhat Shifted', type: 'tone_shifted' },
 
-  // 0xF70A - 0xF70E: High shifted tone marks
-  { pua: 0xF70A, targetCode: 3702, name: 'Mai Ek High Shifted' },
-  { pua: 0xF70B, targetCode: 3703, name: 'Mai Tho High Shifted' },
-  { pua: 0xF70C, targetCode: 3704, name: 'Mai Tri High Shifted' },
-  { pua: 0xF70D, targetCode: 3705, name: 'Mai Chattawa High Shifted' },
-  { pua: 0xF70E, targetCode: 3706, name: 'Thanthakhat High Shifted' },
+  // 0xF70A - 0xF70E: High shifted tone marks (่ ้ ๊ ๋ ์) - on tall consonants with upper vowel (ปี่, ปิ่, ปี้, ฟื้น)
+  { code: 0xF70A, gid: 352, name: 'Mai Ek High Shifted', type: 'tone_high_shifted' },
+  { code: 0xF70B, gid: 353, name: 'Mai Tho High Shifted', type: 'tone_high_shifted' },
+  { code: 0xF70C, gid: 354, name: 'Mai Tri High Shifted', type: 'tone_high_shifted' },
+  { code: 0xF70D, gid: 355, name: 'Mai Chattawa High Shifted', type: 'tone_high_shifted' },
+  { code: 0xF70E, gid: 356, name: 'Thanthakhat High Shifted', type: 'tone_high_shifted' },
 
-  // 0xF70F - 0xF710: Cut descender
-  { pua: 0xF70F, targetCode: 3698, name: 'Yo Ying Cut Tail' },
-  { pua: 0xF710, targetCode: 3697, name: 'Tho Than Cut Tail' },
+  // 0xF70F - 0xF710: Cut descender for ญ and ฐ (before lower vowels ุ, ู, ฺ)
+  { code: 0xF70F, gid: 357, name: 'Yo Ying Cut Tail', type: 'consonant_cut_tail' },
+  { code: 0xF710, gid: 342, name: 'Tho Than Cut Tail', type: 'consonant_cut_tail' },
 
-  // 0xF711 - 0xF713: Lowered vowels
-  { pua: 0xF711, targetCode: 3699, name: 'Sara U Short' },
-  { pua: 0xF712, targetCode: 3700, name: 'Sara Uu Short' },
-  { pua: 0xF713, targetCode: 3701, name: 'Phinthu Short' },
+  // 0xF711 - 0xF713: Lowered vowels for ฎ and ฏ
+  { code: 0xF711, gid: 366, name: 'Sara U Short', type: 'lower_vowel_short' },
+  { code: 0xF712, gid: 367, name: 'Sara Uu Short', type: 'lower_vowel_short' },
+  { code: 0xF713, gid: 368, name: 'Phinthu Short', type: 'lower_vowel_short' },
 
-  // 0xF714 - 0xF71A: Shifted upper vowels
-  { pua: 0xF714, targetCode: 3690, name: 'Mai Han-Akat Shifted' },
-  { pua: 0xF715, targetCode: 3691, name: 'Sara I Shifted' },
-  { pua: 0xF716, targetCode: 3692, name: 'Sara Ii Shifted' },
-  { pua: 0xF717, targetCode: 3693, name: 'Sara Ue Shifted' },
-  { pua: 0xF718, targetCode: 3694, name: 'Sara Uee Shifted' },
-  { pua: 0xF719, targetCode: 3695, name: 'Maitaikhu Shifted' },
-  { pua: 0xF71A, targetCode: 3696, name: 'Nikhahit Shifted' }
+  // 0xF714 - 0xF71A: Shifted upper vowels for ป, ฝ, ฟ (ั ิ ี ึ ื ็ ํ)
+  { code: 0xF714, gid: 358, name: 'Mai Han-Akat Shifted', type: 'upper_vowel_shifted' },
+  { code: 0xF715, gid: 343, name: 'Sara I Shifted', type: 'upper_vowel_shifted' },
+  { code: 0xF716, gid: 344, name: 'Sara Ii Shifted', type: 'upper_vowel_shifted' },
+  { code: 0xF717, gid: 345, name: 'Sara Ue Shifted', type: 'upper_vowel_shifted' },
+  { code: 0xF718, gid: 346, name: 'Sara Uee Shifted', type: 'upper_vowel_shifted' },
+  { code: 0xF719, gid: 360, name: 'Maitaikhu Shifted', type: 'upper_vowel_shifted' },
+  { code: 0xF71A, gid: 359, name: 'Nikhahit Shifted', type: 'upper_vowel_shifted' }
 ];
 
-const puaEntries = [];
-for (const p of puaMap) {
-  const target = thaiTable.find(x => x.code === p.targetCode);
-  if (target) {
-    puaEntries.push({
-      code: p.pua,
-      gid: target.gid,
-      char: String.fromCharCode(p.pua),
-      name: p.name,
-      type: target.type
-    });
-  }
-}
+const puaEntries = puaList.map(p => ({
+  code: p.code,
+  gid: p.gid,
+  char: String.fromCharCode(p.code),
+  name: p.name,
+  type: p.type
+}));
 
-// Combine all
-const fullCharset = [...ascii, ...extraSymbols, ...thaiTable, ...puaEntries];
+// Standard Thai Unicode: ก to ๛ (codes 3585 - 3675)
+const thaiStandard = thaiTable.filter(x => x.code <= 3675);
+
+// Combine all (Standard ASCII + Extra Typography + Standard Thai Unicode + Standard Thai PUA)
+const fullCharset = [...ascii, ...extraSymbols, ...thaiStandard, ...puaEntries];
 console.log('Total characters in full charset (with standard PUA):', fullCharset.length);
 
 const outPath1 = 'sarabun_bitmap_fonts/tables_and_configs/full_charset_table.json';

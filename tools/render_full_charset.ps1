@@ -129,12 +129,26 @@ foreach ($item in $charset) {
 
     # Determine Advance Width
     $advance = 0
-    if ($code -ge 0 -and $code -le 0xFFFF) {
+    if ($code -eq 0xF710) {
+        # Tho Than Cut Tail (0xF710) has the exact same advance width as Tho Than (0x0E10)
+        if ([FullCharsetRenderer]::GetCharWidth32($scratchHdc, 0x0E10, 0x0E10, $widthBuf)) {
+            $advance = $widthBuf[0]
+        }
+    } elseif ($code -eq 0xF70F) {
+        # Yo Ying Cut Tail (0xF70F) has the exact same advance width as Yo Ying (0x0E0D)
+        if ([FullCharsetRenderer]::GetCharWidth32($scratchHdc, 0x0E0D, 0x0E0D, $widthBuf)) {
+            $advance = $widthBuf[0]
+        }
+    } elseif ($code -ge 0 -and $code -le 0xFFFF) {
         if ([FullCharsetRenderer]::GetCharWidth32($scratchHdc, [uint32]$code, [uint32]$code, $widthBuf)) {
             $advance = $widthBuf[0]
         }
     }
-    if ($advance -le 0) {
+
+    $isCombining = ($type -like "*tone*" -or $type -like "*vowel*" -or $type -like "*mark*") -and ($type -notlike "*consonant*") -and ($type -ne "normal")
+    if ($isCombining) {
+        $advance = 0
+    } elseif ($advance -le 0) {
         $advance = [int]($FontSize * 0.5)
     }
 
@@ -216,6 +230,24 @@ foreach ($item in $charset) {
         $h = $maxY - $minY + 1
         $xoff = $minX - $drawOriginX
         $yoff = $minY - $drawOriginY
+
+        # PUA Tone Marks GPOS anchor adjustment for static bitmap fonts
+        # In TrueType OpenType, GIDs 347-356 rely on dynamic GPOS anchors.
+        # For standalone bitmap fonts (BMFont / Texture Atlas), apply the design offsets:
+        if ($code -ge 0xF705 -and $code -le 0xF709) {
+            # Shifted tones (Level 2 on tall consonant without upper vowel: ป่า, ปุ๊, ฟุ้ง)
+            $yoff -= [int][Math]::Round($FontSize * 0.22)
+            $xoff -= [int][Math]::Round($FontSize * 0.08)
+        } elseif ($code -ge 0xF70A -and $code -le 0xF70E) {
+            # High Shifted tones (Level 3 on tall consonant with upper vowel: ปี่, ปิ่, ปี้, ฟื้น)
+            $yoff -= [int][Math]::Round($FontSize * 0.18)
+            # Center over shifted upper vowel (around -12 to -14px)
+            if ($code -eq 0xF70A) { $xoff -= [int][Math]::Round($FontSize * 0.24) }
+            elseif ($code -eq 0xF70B) { $xoff -= [int][Math]::Round($FontSize * 0.14) }
+            elseif ($code -eq 0xF70C) { $xoff -= [int][Math]::Round($FontSize * 0.08) }
+            elseif ($code -eq 0xF70D) { $xoff -= [int][Math]::Round($FontSize * 0.20) }
+            elseif ($code -eq 0xF70E) { $xoff -= [int][Math]::Round($FontSize * 0.18) }
+        }
 
         $gBmp = New-Object System.Drawing.Bitmap $w, $h, ([System.Drawing.Imaging.PixelFormat]::Format32bppArgb)
         for ($y = 0; $y -lt $h; $y++) {

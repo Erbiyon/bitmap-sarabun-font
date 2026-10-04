@@ -2264,7 +2264,7 @@
         "yoffset":  10,
         "char":  "ั",
         "code":  3633,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -13
     },
     {
@@ -2306,7 +2306,7 @@
         "yoffset":  11,
         "char":  "ิ",
         "code":  3636,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -19
     },
     {
@@ -2320,7 +2320,7 @@
         "yoffset":  10,
         "char":  "ี",
         "code":  3637,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -19
     },
     {
@@ -2334,7 +2334,7 @@
         "yoffset":  9,
         "char":  "ึ",
         "code":  3638,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -19
     },
     {
@@ -2348,7 +2348,7 @@
         "yoffset":  10,
         "char":  "ื",
         "code":  3639,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -19
     },
     {
@@ -2362,7 +2362,7 @@
         "yoffset":  43,
         "char":  "ุ",
         "code":  3640,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -9
     },
     {
@@ -2376,7 +2376,7 @@
         "yoffset":  43,
         "char":  "ู",
         "code":  3641,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -15
     },
     {
@@ -2390,7 +2390,7 @@
         "yoffset":  43,
         "char":  "ฺ",
         "code":  3642,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -6
     },
     {
@@ -2516,7 +2516,7 @@
         "yoffset":  8,
         "char":  "็",
         "code":  3655,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -16
     },
     {
@@ -2530,7 +2530,7 @@
         "yoffset":  3,
         "char":  "่",
         "code":  3656,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -6
     },
     {
@@ -2544,7 +2544,7 @@
         "yoffset":  0,
         "char":  "้",
         "code":  3657,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -11
     },
     {
@@ -2558,7 +2558,7 @@
         "yoffset":  0,
         "char":  "๊",
         "code":  3658,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -13
     },
     {
@@ -2572,7 +2572,7 @@
         "yoffset":  2,
         "char":  "๋",
         "code":  3659,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -8
     },
     {
@@ -2586,7 +2586,7 @@
         "yoffset":  1,
         "char":  "์",
         "code":  3660,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -9
     },
     {
@@ -2600,7 +2600,7 @@
         "yoffset":  11,
         "char":  "ํ",
         "code":  3661,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -9
     },
     {
@@ -2614,7 +2614,7 @@
         "yoffset":  9,
         "char":  "๎",
         "code":  3662,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -11
     },
     {
@@ -2808,387 +2808,9 @@
         "width":  5,
         "name":  "Mai Ek High",
         "yoffset":  3,
-        "char":  "่",
-        "code":  3680,
-        "xadvance":  34,
-        "xoffset":  -11
-    },
-    {
-        "x":  723,
-        "height":  9,
-        "type":  "tone_high",
-        "gid":  362,
-        "y":  102,
-        "width":  13,
-        "name":  "Mai Tho High",
-        "yoffset":  0,
-        "char":  "้",
-        "code":  3681,
-        "xadvance":  34,
-        "xoffset":  -16
-    },
-    {
-        "x":  738,
-        "height":  8,
-        "type":  "tone_high",
-        "gid":  363,
-        "y":  102,
-        "width":  16,
-        "name":  "Mai Tri High",
-        "yoffset":  1,
-        "char":  "๊",
-        "code":  3682,
-        "xadvance":  34,
-        "xoffset":  -18
-    },
-    {
-        "x":  756,
-        "height":  6,
-        "type":  "tone_high",
-        "gid":  364,
-        "y":  102,
-        "width":  9,
-        "name":  "Mai Chattawa High",
-        "yoffset":  2,
-        "char":  "๋",
-        "code":  3683,
-        "xadvance":  34,
-        "xoffset":  -13
-    },
-    {
-        "x":  767,
-        "height":  9,
-        "type":  "tone_high",
-        "gid":  365,
-        "y":  102,
-        "width":  10,
-        "name":  "Thanthakhat High",
-        "yoffset":  1,
-        "char":  "์",
-        "code":  3684,
-        "xadvance":  34,
-        "xoffset":  -14
-    },
-    {
-        "x":  779,
-        "height":  7,
-        "type":  "tone_shifted",
-        "gid":  347,
-        "y":  102,
-        "width":  5,
-        "name":  "Mai Ek Shifted",
-        "yoffset":  12,
-        "char":  "่",
-        "code":  3685,
-        "xadvance":  34,
-        "xoffset":  -12
-    },
-    {
-        "x":  786,
-        "height":  10,
-        "type":  "tone_shifted",
-        "gid":  348,
-        "y":  102,
-        "width":  14,
-        "name":  "Mai Tho Shifted",
-        "yoffset":  10,
-        "char":  "้",
-        "code":  3686,
-        "xadvance":  34,
-        "xoffset":  -17
-    },
-    {
-        "x":  802,
-        "height":  10,
-        "type":  "tone_shifted",
-        "gid":  349,
-        "y":  102,
-        "width":  17,
-        "name":  "Mai Tri Shifted",
-        "yoffset":  10,
-        "char":  "๊",
-        "code":  3687,
-        "xadvance":  34,
-        "xoffset":  -20
-    },
-    {
-        "x":  821,
-        "height":  6,
-        "type":  "tone_shifted",
-        "gid":  350,
-        "y":  102,
-        "width":  10,
-        "name":  "Mai Chattawa Shifted",
-        "yoffset":  12,
-        "char":  "๋",
-        "code":  3688,
-        "xadvance":  34,
-        "xoffset":  -16
-    },
-    {
-        "x":  833,
-        "height":  10,
-        "type":  "tone_shifted",
-        "gid":  351,
-        "y":  102,
-        "width":  10,
-        "name":  "Thanthakhat Shifted",
-        "yoffset":  9,
-        "char":  "์",
-        "code":  3689,
-        "xadvance":  34,
-        "xoffset":  -15
-    },
-    {
-        "x":  4,
-        "height":  8,
-        "type":  "upper_vowel_shifted",
-        "gid":  262,
-        "y":  102,
-        "width":  16,
-        "name":  "Mai Han-Akat Shifted",
-        "yoffset":  10,
-        "char":  "ั",
-        "code":  3690,
-        "xadvance":  34,
-        "xoffset":  -13
-    },
-    {
-        "x":  66,
-        "height":  8,
-        "type":  "upper_vowel_shifted",
-        "gid":  265,
-        "y":  102,
-        "width":  17,
-        "name":  "Sara I Shifted",
-        "yoffset":  11,
-        "char":  "ิ",
-        "code":  3691,
-        "xadvance":  34,
-        "xoffset":  -19
-    },
-    {
-        "x":  85,
-        "height":  9,
-        "type":  "upper_vowel_shifted",
-        "gid":  266,
-        "y":  102,
-        "width":  17,
-        "name":  "Sara Ii Shifted",
-        "yoffset":  10,
-        "char":  "ี",
-        "code":  3692,
-        "xadvance":  34,
-        "xoffset":  -19
-    },
-    {
-        "x":  104,
-        "height":  10,
-        "type":  "upper_vowel_shifted",
-        "gid":  267,
-        "y":  102,
-        "width":  18,
-        "name":  "Sara Ue Shifted",
-        "yoffset":  9,
-        "char":  "ึ",
-        "code":  3693,
-        "xadvance":  34,
-        "xoffset":  -19
-    },
-    {
-        "x":  124,
-        "height":  9,
-        "type":  "upper_vowel_shifted",
-        "gid":  268,
-        "y":  102,
-        "width":  17,
-        "name":  "Sara Uee Shifted",
-        "yoffset":  10,
-        "char":  "ื",
-        "code":  3694,
-        "xadvance":  34,
-        "xoffset":  -19
-    },
-    {
-        "x":  307,
-        "height":  11,
-        "type":  "upper_vowel_shifted",
-        "gid":  280,
-        "y":  102,
-        "width":  14,
-        "name":  "Maitaikhu Shifted",
-        "yoffset":  8,
-        "char":  "็",
-        "code":  3695,
-        "xadvance":  34,
-        "xoffset":  -16
-    },
-    {
-        "x":  383,
-        "height":  8,
-        "type":  "upper_vowel_shifted",
-        "gid":  286,
-        "y":  102,
-        "width":  9,
-        "name":  "Nikhahit Shifted",
-        "yoffset":  11,
-        "char":  "ํ",
-        "code":  3696,
-        "xadvance":  34,
-        "xoffset":  -9
-    },
-    {
-        "x":  845,
-        "height":  20,
-        "type":  "consonant_cut_tail",
-        "gid":  342,
-        "y":  102,
-        "width":  16,
-        "name":  "Tho Than Cut Tail",
-        "yoffset":  21,
-        "char":  "ฐ",
-        "code":  3697,
-        "xadvance":  34,
-        "xoffset":  1
-    },
-    {
-        "x":  863,
-        "height":  19,
-        "type":  "consonant_cut_tail",
-        "gid":  357,
-        "y":  102,
-        "width":  24,
-        "name":  "Yo Ying Cut Tail",
-        "yoffset":  22,
-        "char":  "ญ",
-        "code":  3698,
-        "xadvance":  34,
-        "xoffset":  1
-    },
-    {
-        "x":  889,
-        "height":  9,
-        "type":  "lower_vowel_short",
-        "gid":  366,
-        "y":  102,
-        "width":  7,
-        "name":  "Sara U Short",
-        "yoffset":  53,
-        "char":  "ุ",
-        "code":  3699,
-        "xadvance":  34,
-        "xoffset":  -9
-    },
-    {
-        "x":  898,
-        "height":  10,
-        "type":  "lower_vowel_short",
-        "gid":  367,
-        "y":  102,
-        "width":  13,
-        "name":  "Sara Uu Short",
-        "yoffset":  53,
-        "char":  "ู",
-        "code":  3700,
-        "xadvance":  34,
-        "xoffset":  -15
-    },
-    {
-        "x":  913,
-        "height":  3,
-        "type":  "lower_vowel_short",
-        "gid":  368,
-        "y":  102,
-        "width":  5,
-        "name":  "Phinthu Short",
-        "yoffset":  53,
-        "char":  "ฺ",
-        "code":  3701,
-        "xadvance":  34,
-        "xoffset":  -6
-    },
-    {
-        "x":  716,
-        "height":  5,
-        "type":  "tone_high_shifted",
-        "gid":  361,
-        "y":  102,
-        "width":  5,
-        "name":  "Mai Ek High Shifted",
-        "yoffset":  3,
-        "char":  "่",
-        "code":  3702,
-        "xadvance":  34,
-        "xoffset":  -11
-    },
-    {
-        "x":  723,
-        "height":  9,
-        "type":  "tone_high_shifted",
-        "gid":  362,
-        "y":  102,
-        "width":  13,
-        "name":  "Mai Tho High Shifted",
-        "yoffset":  0,
-        "char":  "้",
-        "code":  3703,
-        "xadvance":  34,
-        "xoffset":  -16
-    },
-    {
-        "x":  738,
-        "height":  8,
-        "type":  "tone_high_shifted",
-        "gid":  363,
-        "y":  102,
-        "width":  16,
-        "name":  "Mai Tri High Shifted",
-        "yoffset":  1,
-        "char":  "๊",
-        "code":  3704,
-        "xadvance":  34,
-        "xoffset":  -18
-    },
-    {
-        "x":  756,
-        "height":  6,
-        "type":  "tone_high_shifted",
-        "gid":  364,
-        "y":  102,
-        "width":  9,
-        "name":  "Mai Chattawa High Shifted",
-        "yoffset":  2,
-        "char":  "๋",
-        "code":  3705,
-        "xadvance":  34,
-        "xoffset":  -13
-    },
-    {
-        "x":  767,
-        "height":  9,
-        "type":  "tone_high_shifted",
-        "gid":  365,
-        "y":  102,
-        "width":  10,
-        "name":  "Thanthakhat High Shifted",
-        "yoffset":  1,
-        "char":  "์",
-        "code":  3706,
-        "xadvance":  34,
-        "xoffset":  -14
-    },
-    {
-        "x":  716,
-        "height":  5,
-        "type":  "tone_high",
-        "gid":  361,
-        "y":  102,
-        "width":  5,
-        "name":  "Mai Ek High",
-        "yoffset":  3,
         "char":  "",
         "code":  63232,
-        "xadvance":  18,
+        "xadvance":  0,
         "xoffset":  -11
     },
     {
@@ -3202,7 +2824,7 @@
         "yoffset":  0,
         "char":  "",
         "code":  63233,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -16
     },
     {
@@ -3216,7 +2838,7 @@
         "yoffset":  1,
         "char":  "",
         "code":  63234,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -18
     },
     {
@@ -3230,7 +2852,7 @@
         "yoffset":  2,
         "char":  "",
         "code":  63235,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -13
     },
     {
@@ -3244,7 +2866,7 @@
         "yoffset":  1,
         "char":  "",
         "code":  63236,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -14
     },
     {
@@ -3255,11 +2877,11 @@
         "y":  102,
         "width":  5,
         "name":  "Mai Ek Shifted",
-        "yoffset":  12,
+        "yoffset":  1,
         "char":  "",
         "code":  63237,
-        "xadvance":  24,
-        "xoffset":  -12
+        "xadvance":  0,
+        "xoffset":  -16
     },
     {
         "x":  786,
@@ -3269,11 +2891,11 @@
         "y":  102,
         "width":  14,
         "name":  "Mai Tho Shifted",
-        "yoffset":  10,
+        "yoffset":  -1,
         "char":  "",
         "code":  63238,
-        "xadvance":  24,
-        "xoffset":  -17
+        "xadvance":  0,
+        "xoffset":  -21
     },
     {
         "x":  802,
@@ -3283,11 +2905,11 @@
         "y":  102,
         "width":  17,
         "name":  "Mai Tri Shifted",
-        "yoffset":  10,
+        "yoffset":  -1,
         "char":  "",
         "code":  63239,
-        "xadvance":  24,
-        "xoffset":  -20
+        "xadvance":  0,
+        "xoffset":  -24
     },
     {
         "x":  821,
@@ -3297,11 +2919,11 @@
         "y":  102,
         "width":  10,
         "name":  "Mai Chattawa Shifted",
-        "yoffset":  12,
+        "yoffset":  1,
         "char":  "",
         "code":  63240,
-        "xadvance":  24,
-        "xoffset":  -16
+        "xadvance":  0,
+        "xoffset":  -20
     },
     {
         "x":  833,
@@ -3311,84 +2933,84 @@
         "y":  102,
         "width":  10,
         "name":  "Thanthakhat Shifted",
-        "yoffset":  9,
+        "yoffset":  -2,
         "char":  "",
         "code":  63241,
-        "xadvance":  24,
-        "xoffset":  -15
+        "xadvance":  0,
+        "xoffset":  -19
     },
     {
-        "x":  716,
-        "height":  5,
+        "x":  845,
+        "height":  7,
         "type":  "tone_high_shifted",
-        "gid":  361,
+        "gid":  352,
         "y":  102,
-        "width":  5,
+        "width":  4,
         "name":  "Mai Ek High Shifted",
         "yoffset":  3,
         "char":  "",
         "code":  63242,
-        "xadvance":  24,
-        "xoffset":  -11
+        "xadvance":  0,
+        "xoffset":  -18
     },
     {
-        "x":  723,
-        "height":  9,
+        "x":  851,
+        "height":  10,
         "type":  "tone_high_shifted",
-        "gid":  362,
+        "gid":  353,
         "y":  102,
-        "width":  13,
+        "width":  14,
         "name":  "Mai Tho High Shifted",
         "yoffset":  0,
         "char":  "",
         "code":  63243,
-        "xadvance":  24,
-        "xoffset":  -16
+        "xadvance":  0,
+        "xoffset":  -20
     },
     {
-        "x":  738,
-        "height":  8,
+        "x":  867,
+        "height":  10,
         "type":  "tone_high_shifted",
-        "gid":  363,
+        "gid":  354,
         "y":  102,
-        "width":  16,
+        "width":  17,
         "name":  "Mai Tri High Shifted",
         "yoffset":  1,
         "char":  "",
         "code":  63244,
-        "xadvance":  24,
-        "xoffset":  -18
+        "xadvance":  0,
+        "xoffset":  -21
     },
     {
-        "x":  756,
-        "height":  6,
+        "x":  886,
+        "height":  7,
         "type":  "tone_high_shifted",
-        "gid":  364,
+        "gid":  355,
         "y":  102,
-        "width":  9,
+        "width":  10,
         "name":  "Mai Chattawa High Shifted",
-        "yoffset":  2,
+        "yoffset":  3,
         "char":  "",
         "code":  63245,
-        "xadvance":  24,
-        "xoffset":  -13
+        "xadvance":  0,
+        "xoffset":  -19
     },
     {
-        "x":  767,
-        "height":  9,
+        "x":  898,
+        "height":  10,
         "type":  "tone_high_shifted",
-        "gid":  365,
+        "gid":  356,
         "y":  102,
         "width":  10,
         "name":  "Thanthakhat High Shifted",
-        "yoffset":  1,
+        "yoffset":  0,
         "char":  "",
         "code":  63246,
-        "xadvance":  24,
-        "xoffset":  -14
+        "xadvance":  0,
+        "xoffset":  -19
     },
     {
-        "x":  863,
+        "x":  910,
         "height":  19,
         "type":  "consonant_cut_tail",
         "gid":  357,
@@ -3398,11 +3020,11 @@
         "yoffset":  22,
         "char":  "",
         "code":  63247,
-        "xadvance":  27,
+        "xadvance":  28,
         "xoffset":  1
     },
     {
-        "x":  845,
+        "x":  936,
         "height":  20,
         "type":  "consonant_cut_tail",
         "gid":  342,
@@ -3412,11 +3034,11 @@
         "yoffset":  21,
         "char":  "",
         "code":  63248,
-        "xadvance":  24,
+        "xadvance":  18,
         "xoffset":  1
     },
     {
-        "x":  889,
+        "x":  954,
         "height":  9,
         "type":  "lower_vowel_short",
         "gid":  366,
@@ -3426,11 +3048,11 @@
         "yoffset":  53,
         "char":  "",
         "code":  63249,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -9
     },
     {
-        "x":  898,
+        "x":  963,
         "height":  10,
         "type":  "lower_vowel_short",
         "gid":  367,
@@ -3440,11 +3062,11 @@
         "yoffset":  53,
         "char":  "",
         "code":  63250,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -15
     },
     {
-        "x":  913,
+        "x":  978,
         "height":  3,
         "type":  "lower_vowel_short",
         "gid":  368,
@@ -3454,105 +3076,105 @@
         "yoffset":  53,
         "char":  "",
         "code":  63251,
-        "xadvance":  24,
+        "xadvance":  0,
         "xoffset":  -6
     },
     {
-        "x":  4,
+        "x":  985,
         "height":  8,
         "type":  "upper_vowel_shifted",
-        "gid":  262,
+        "gid":  358,
         "y":  102,
         "width":  16,
         "name":  "Mai Han-Akat Shifted",
         "yoffset":  10,
         "char":  "",
         "code":  63252,
-        "xadvance":  24,
-        "xoffset":  -13
+        "xadvance":  0,
+        "xoffset":  -18
     },
     {
-        "x":  66,
+        "x":  1003,
         "height":  8,
         "type":  "upper_vowel_shifted",
-        "gid":  265,
+        "gid":  343,
         "y":  102,
         "width":  17,
         "name":  "Sara I Shifted",
         "yoffset":  11,
         "char":  "",
         "code":  63253,
-        "xadvance":  24,
-        "xoffset":  -19
+        "xadvance":  0,
+        "xoffset":  -23
     },
     {
-        "x":  85,
+        "x":  4,
         "height":  9,
         "type":  "upper_vowel_shifted",
-        "gid":  266,
-        "y":  102,
+        "gid":  344,
+        "y":  136,
         "width":  17,
         "name":  "Sara Ii Shifted",
         "yoffset":  10,
         "char":  "",
         "code":  63254,
-        "xadvance":  24,
-        "xoffset":  -19
+        "xadvance":  0,
+        "xoffset":  -23
     },
     {
-        "x":  104,
+        "x":  23,
         "height":  10,
         "type":  "upper_vowel_shifted",
-        "gid":  267,
-        "y":  102,
-        "width":  18,
+        "gid":  345,
+        "y":  136,
+        "width":  17,
         "name":  "Sara Ue Shifted",
         "yoffset":  9,
         "char":  "",
         "code":  63255,
-        "xadvance":  24,
-        "xoffset":  -19
+        "xadvance":  0,
+        "xoffset":  -23
     },
     {
-        "x":  124,
+        "x":  42,
         "height":  9,
         "type":  "upper_vowel_shifted",
-        "gid":  268,
-        "y":  102,
+        "gid":  346,
+        "y":  136,
         "width":  17,
         "name":  "Sara Uee Shifted",
         "yoffset":  10,
         "char":  "",
         "code":  63256,
-        "xadvance":  24,
-        "xoffset":  -19
+        "xadvance":  0,
+        "xoffset":  -23
     },
     {
-        "x":  307,
-        "height":  11,
+        "x":  61,
+        "height":  10,
         "type":  "upper_vowel_shifted",
-        "gid":  280,
-        "y":  102,
+        "gid":  360,
+        "y":  136,
         "width":  14,
         "name":  "Maitaikhu Shifted",
         "yoffset":  8,
         "char":  "",
         "code":  63257,
-        "xadvance":  24,
-        "xoffset":  -16
+        "xadvance":  0,
+        "xoffset":  -20
     },
     {
-        "x":  383,
+        "x":  77,
         "height":  8,
         "type":  "upper_vowel_shifted",
-        "gid":  286,
-        "y":  102,
+        "gid":  359,
+        "y":  136,
         "width":  9,
         "name":  "Nikhahit Shifted",
         "yoffset":  11,
         "char":  "",
         "code":  63258,
-        "xadvance":  24,
-        "xoffset":  -9
+        "xadvance":  0,
+        "xoffset":  -16
     }
 ]

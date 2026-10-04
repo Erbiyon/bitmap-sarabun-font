@@ -1200,195 +1200,6 @@
     "type": "normal"
   },
   {
-    "code": 3680,
-    "gid": 361,
-    "char": "่",
-    "name": "Mai Ek High",
-    "type": "tone_high"
-  },
-  {
-    "code": 3681,
-    "gid": 362,
-    "char": "้",
-    "name": "Mai Tho High",
-    "type": "tone_high"
-  },
-  {
-    "code": 3682,
-    "gid": 363,
-    "char": "๊",
-    "name": "Mai Tri High",
-    "type": "tone_high"
-  },
-  {
-    "code": 3683,
-    "gid": 364,
-    "char": "๋",
-    "name": "Mai Chattawa High",
-    "type": "tone_high"
-  },
-  {
-    "code": 3684,
-    "gid": 365,
-    "char": "์",
-    "name": "Thanthakhat High",
-    "type": "tone_high"
-  },
-  {
-    "code": 3685,
-    "gid": 347,
-    "char": "่",
-    "name": "Mai Ek Shifted",
-    "type": "tone_shifted"
-  },
-  {
-    "code": 3686,
-    "gid": 348,
-    "char": "้",
-    "name": "Mai Tho Shifted",
-    "type": "tone_shifted"
-  },
-  {
-    "code": 3687,
-    "gid": 349,
-    "char": "๊",
-    "name": "Mai Tri Shifted",
-    "type": "tone_shifted"
-  },
-  {
-    "code": 3688,
-    "gid": 350,
-    "char": "๋",
-    "name": "Mai Chattawa Shifted",
-    "type": "tone_shifted"
-  },
-  {
-    "code": 3689,
-    "gid": 351,
-    "char": "์",
-    "name": "Thanthakhat Shifted",
-    "type": "tone_shifted"
-  },
-  {
-    "code": 3690,
-    "gid": 262,
-    "char": "ั",
-    "name": "Mai Han-Akat Shifted",
-    "type": "upper_vowel_shifted"
-  },
-  {
-    "code": 3691,
-    "gid": 265,
-    "char": "ิ",
-    "name": "Sara I Shifted",
-    "type": "upper_vowel_shifted"
-  },
-  {
-    "code": 3692,
-    "gid": 266,
-    "char": "ี",
-    "name": "Sara Ii Shifted",
-    "type": "upper_vowel_shifted"
-  },
-  {
-    "code": 3693,
-    "gid": 267,
-    "char": "ึ",
-    "name": "Sara Ue Shifted",
-    "type": "upper_vowel_shifted"
-  },
-  {
-    "code": 3694,
-    "gid": 268,
-    "char": "ื",
-    "name": "Sara Uee Shifted",
-    "type": "upper_vowel_shifted"
-  },
-  {
-    "code": 3695,
-    "gid": 280,
-    "char": "็",
-    "name": "Maitaikhu Shifted",
-    "type": "upper_vowel_shifted"
-  },
-  {
-    "code": 3696,
-    "gid": 286,
-    "char": "ํ",
-    "name": "Nikhahit Shifted",
-    "type": "upper_vowel_shifted"
-  },
-  {
-    "code": 3697,
-    "gid": 342,
-    "char": "ฐ",
-    "name": "Tho Than Cut Tail",
-    "type": "consonant_cut_tail"
-  },
-  {
-    "code": 3698,
-    "gid": 357,
-    "char": "ญ",
-    "name": "Yo Ying Cut Tail",
-    "type": "consonant_cut_tail"
-  },
-  {
-    "code": 3699,
-    "gid": 366,
-    "char": "ุ",
-    "name": "Sara U Short",
-    "type": "lower_vowel_short"
-  },
-  {
-    "code": 3700,
-    "gid": 367,
-    "char": "ู",
-    "name": "Sara Uu Short",
-    "type": "lower_vowel_short"
-  },
-  {
-    "code": 3701,
-    "gid": 368,
-    "char": "ฺ",
-    "name": "Phinthu Short",
-    "type": "lower_vowel_short"
-  },
-  {
-    "code": 3702,
-    "gid": 361,
-    "char": "่",
-    "name": "Mai Ek High Shifted",
-    "type": "tone_high_shifted"
-  },
-  {
-    "code": 3703,
-    "gid": 362,
-    "char": "้",
-    "name": "Mai Tho High Shifted",
-    "type": "tone_high_shifted"
-  },
-  {
-    "code": 3704,
-    "gid": 363,
-    "char": "๊",
-    "name": "Mai Tri High Shifted",
-    "type": "tone_high_shifted"
-  },
-  {
-    "code": 3705,
-    "gid": 364,
-    "char": "๋",
-    "name": "Mai Chattawa High Shifted",
-    "type": "tone_high_shifted"
-  },
-  {
-    "code": 3706,
-    "gid": 365,
-    "char": "์",
-    "name": "Thanthakhat High Shifted",
-    "type": "tone_high_shifted"
-  },
-  {
     "code": 63232,
     "gid": 361,
     "char": "",
@@ -1460,35 +1271,35 @@
   },
   {
     "code": 63242,
-    "gid": 361,
+    "gid": 352,
     "char": "",
     "name": "Mai Ek High Shifted",
     "type": "tone_high_shifted"
   },
   {
     "code": 63243,
-    "gid": 362,
+    "gid": 353,
     "char": "",
     "name": "Mai Tho High Shifted",
     "type": "tone_high_shifted"
   },
   {
     "code": 63244,
-    "gid": 363,
+    "gid": 354,
     "char": "",
     "name": "Mai Tri High Shifted",
     "type": "tone_high_shifted"
   },
   {
     "code": 63245,
-    "gid": 364,
+    "gid": 355,
     "char": "",
     "name": "Mai Chattawa High Shifted",
     "type": "tone_high_shifted"
   },
   {
     "code": 63246,
-    "gid": 365,
+    "gid": 356,
     "char": "",
     "name": "Thanthakhat High Shifted",
     "type": "tone_high_shifted"
@@ -1530,49 +1341,49 @@
   },
   {
     "code": 63252,
-    "gid": 262,
+    "gid": 358,
     "char": "",
     "name": "Mai Han-Akat Shifted",
     "type": "upper_vowel_shifted"
   },
   {
     "code": 63253,
-    "gid": 265,
+    "gid": 343,
     "char": "",
     "name": "Sara I Shifted",
     "type": "upper_vowel_shifted"
   },
   {
     "code": 63254,
-    "gid": 266,
+    "gid": 344,
     "char": "",
     "name": "Sara Ii Shifted",
     "type": "upper_vowel_shifted"
   },
   {
     "code": 63255,
-    "gid": 267,
+    "gid": 345,
     "char": "",
     "name": "Sara Ue Shifted",
     "type": "upper_vowel_shifted"
   },
   {
     "code": 63256,
-    "gid": 268,
+    "gid": 346,
     "char": "",
     "name": "Sara Uee Shifted",
     "type": "upper_vowel_shifted"
   },
   {
     "code": 63257,
-    "gid": 280,
+    "gid": 360,
     "char": "",
     "name": "Maitaikhu Shifted",
     "type": "upper_vowel_shifted"
   },
   {
     "code": 63258,
-    "gid": 286,
+    "gid": 359,
     "char": "",
     "name": "Nikhahit Shifted",
     "type": "upper_vowel_shifted"
